@@ -2,8 +2,8 @@
 title: Aric Gardner
 subtitle: Personal Site
 email: actual@aricgardner.com
-description: A portfolio and Vanity site
-baseurl: "" # the subpath of your site, e.g. /blog
+#description: A portfolio and Vanity site
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 street_address:
