@@ -12,7 +12,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
-          target_branch: "gh-pages"
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
@@ -20,3 +19,4 @@ jobs:
       - uses: helaili/jekyll-action@2.3.1 # Choose any one of the Jekyll Actions
         with: # Some relative inputs of your action
           token: ${{ secrets.GITHUB_TOKEN }}
+          target_branch: "gh-pages"
