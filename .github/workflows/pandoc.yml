@@ -19,7 +19,7 @@ jobs:
             -o Pandoc/resume.pdf
             Pandoc/resume.md
       - name: Commit PDF
-      - run: |
+        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add Pandoc/resume.pdf
