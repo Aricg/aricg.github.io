@@ -1,0 +1,21 @@
+name: Pandoc
+on:
+  push:
+    paths:
+      - "Pandoc/**"
+    branches:
+      - gh-pages
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: docker://pandoc/latex
+        with:
+          args: >-
+            -o Pandoc/resume.pdf
+            Pandoc/resume.md
+      - uses: actions/upload-artifact@master
+        with:
+          name: resume.pdf
+          path: Pandoc/resume.pdf
