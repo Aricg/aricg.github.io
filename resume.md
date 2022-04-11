@@ -8,5 +8,18 @@ nav-menu: true
 
 Resume rendered from markdown to pdf via github actions
 
+```python
+s = "Python syntax highlighting"
+print s
+```
 
+
+some text and [here is possible to download the file in PDF][1]
+
+[1]:{{ aricg.github.io }}/assets/images/resume.pdf
+
+
+
+<!--
 <object data="{{ "assets/images/resume.pdf" }}" width="1000" height="1000" type='application/pdf'> </object>
+-->
