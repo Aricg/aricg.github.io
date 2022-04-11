@@ -18,13 +18,15 @@ jobs:
           args: >-
             -o Pandoc/resume.pdf
             Pandoc/resume.md
-      - name: Commit report
+      - name: Commit PDF
+        uses: actions/checkout@v2
         with: # Some relative inputs of your action
           token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name 'Aric Gardner'
           git config --global user.email 'aricg@users.noreply.github.com'
-          git commit -am "Push resume.pdf"
+          git add Pandoc/resume.pdf
+          git commit -m "Push resume.pdf"
           git push
       - uses: actions/upload-artifact@master
         with:
