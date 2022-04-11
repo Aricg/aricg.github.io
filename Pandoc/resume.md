@@ -19,10 +19,10 @@ Professional Experience
 
 : Developed automations to deliver self-service to the developers of large software collaborations (OpenDaylight, ONAP, OPNFV)
 
-    * provided release engineering and system administration for collaborative Projects
-    * Created artifact repository
-    * Deployed Jenkins job builder, jcasc
-    * Migrations from baremetal to dynamic provisioning on the cloud (jclouds)
+    * Provided release engineering and system administration for collaborative Projects
+    * Supported Developers with jobs, docs, artifacts and everything in-between.
+    * Deployed scaffolding for developer driven test with Jenkins job builder, jcasc and more
+    * Migrated from static baremetal to dynamic provisioning of build nodes.
     * contributed in-house code. puppet, ansible, jenkins-job-builder, lftools, global-jjb
     * Wrote api interfaces for gerrit, github
     * Conceived and completed yaml driven automation for committer rights.
