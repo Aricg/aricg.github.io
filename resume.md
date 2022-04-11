@@ -16,7 +16,7 @@ print s
 
 some text and [here is possible to download the file in PDF][1]
 
-[1]:{{ aricg.github.io }}/assets/images/resume.pdf
+[1]:{{ aricg.github.io }}/Pandoc/resume.pdf
 
 
 
