@@ -17,7 +17,7 @@ Professional Experience
 2014-2021
 :    **DevOps/Continous Integration**; The Linux Foundation
 
-: Developed automations to deliver self-service to the developers of large software collaborations
+: Developed automations to deliver self-service to the developers of large software collaborations (OpenDaylight, ONAP, OPNFV)
 
     * provided release engineering and system administration for collaborative Projects
     * Created artifact repository
