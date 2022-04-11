@@ -10,7 +10,10 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - uses: docker://pandoc/latex
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Convert with Pandoc
+        uses: docker://pandoc/latex
         with:
           args: >-
             -o Pandoc/resume.pdf

@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - gh-pages # or master before October 2020
+    paths-ignore:
+      - Pandoc
 
 jobs:
   github-pages:
