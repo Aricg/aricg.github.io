@@ -7,7 +7,7 @@ actual@aricgardner.com
 > A self-taught technophile\
 > Open-source, automation, best practices\
 > Continous Integration\
-> In my ideal world developers interface with compute as a commodity\
+> In an ideal world developers interface with compute as a commodity\
 
 ----
 
@@ -23,14 +23,15 @@ Professional Experience
     * Supported Developers with jobs, docs, artifacts and everything in-between.
     * Deployed scaffolding for developer driven test with Jenkins job builder, jcasc and more
     * Migrated from static baremetal to dynamic provisioning of build nodes.
-    * contributed in-house code. puppet, ansible, jenkins-job-builder, lftools, global-jjb
-    * Wrote api interfaces for gerrit, github
-    * Conceived and completed yaml driven automation for committer rights.
-    * Artifact promotion
-    * project creation (gerrit, jira, jenkins,
-    * Conveived and completed documentaion automation from rst to readthedocs
-    * kubernetes
-    * terraform
+    * Contributed in-house code. puppet, ansible, jenkins-job-builder, lftools, global-jjb
+    * Wrote api interfaces for gerrit and github
+    * Custom Yaml driven automation for:
+      * Committer rights.
+      * Artifact release, promotion
+      * Project creation (Gerrit, Github, Jenkins)
+    * Documentaion automation from rst to readthedocs
+    * Kubernetes
+    * Terraform
 
 2013-2014
 :    **Systems Administrator**; eNovance
