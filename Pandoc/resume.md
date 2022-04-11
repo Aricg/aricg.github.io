@@ -21,14 +21,15 @@ Professional Experience
 
     * Provided release engineering and system administration for collaborative Projects
     * Supported Developers with jobs, docs, artifacts and everything in-between.
-    * Deployed scaffolding for developer driven test with Jenkins job builder, jcasc and more
+    * Deployed scaffolding for developer driven test with Jenkins job builder.
     * Migrated from static baremetal to dynamic provisioning of build nodes.
     * Contributed in-house code. puppet, ansible, jenkins-job-builder, lftools, global-jjb
     * Wrote api interfaces for gerrit and github
-    * Custom Yaml driven automation for:
+    * Custom Yaml driven, in repo, automation for:
       * Committer rights.
       * Artifact release, promotion
       * Project creation (Gerrit, Github, Jenkins)
+    * Jenkins Configuration automation in repo via jcasc
     * Documentaion automation from rst to readthedocs
     * Kubernetes
     * Terraform
