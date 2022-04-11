@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Environment
+title: ~/
 image: assets/images/pic88.png
 nav-menu: true
 ---
