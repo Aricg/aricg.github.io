@@ -29,7 +29,7 @@ Professional Experience
       * Committer rights.
       * Artifact release, promotion
       * Project creation (Gerrit, Github, Jenkins)
-    * Jenkins Configuration automation in repo via Jcasc
+    * Jenkins Configuration automation in repo via JcasC
     * Documentaion automation from rst to readthedocs in jenkins
     * Authored Kubernetes helm packages for non trivial applications
     * Worked with in house Terraform
