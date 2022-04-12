@@ -1,5 +1,6 @@
 ---
-layout: page
+#layout: page
+layout: post
 title: Specimen
 description: Code Contributions
 image: assets/images/pic01.jpg
@@ -28,9 +29,9 @@ I wrote a CLI interface in python to talk to the gerrit and github apis.<br>
 This culminated in my authoring jenkins driven automatic project creation.<br>
 Project creation which included templating for new projects.<br>
 Allowing CI methods for documentation, builds etc to be avaliable from the start<br>
-And the end there is some of the code for JcasC which allows config files pushed into
-jenkins-job-builder repository to configure jenkins proper. no more clicking.
-[A recent change set that creates a project:](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)
+And the end there is some of the code for JcasC which allows config files pushed into <br>
+jenkins-job-builder repository to configure jenkins proper. no more clicking. <br>
+[A recent change set that creates a project](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)
 
 {% highlight none %}
 Usage: lftools gerrit [OPTIONS] COMMAND [ARGS]...
@@ -295,7 +296,7 @@ gerrit_cli.add_command(addmavenconfig)
 {% endhighlight %}
 </details>
 
-[link to gerrit.py:](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/gerrit.py)
+[link to gerrit.py](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/gerrit.py)
 
 <details>
 <summary>
@@ -745,15 +746,15 @@ class Gerrit(client.RestApi):
 </details>
 
 
-[link to api/gerrit.py:](https://github.com/lfit/releng-lftools/blob/master/lftools/api/endpoints/gerrit.py)
+[link to api/gerrit.py](https://github.com/lfit/releng-lftools/blob/master/lftools/api/endpoints/gerrit.py)
 
 The above api interface was written to replace my earlier work done in bash:<br>
-[shell/gerrit_create:](https://github.com/lfit/releng-lftools/blob/master/shell/gerrit_create)<br>
-[shell/inactivecommitters:](https://github.com/lfit/releng-lftools/blob/master/shell/inactivecommitters)
+[shell/gerrit_create](https://github.com/lfit/releng-lftools/blob/master/shell/gerrit_create)<br>
+[shell/inactivecommitters](https://github.com/lfit/releng-lftools/blob/master/shell/inactivecommitters)
 
 
 
-[lftools github documentation:](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/github.html)
+[lftools github documentation](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/github.html)
 
 {% highlight none %}
 Usage: lftools github [OPTIONS] COMMAND [ARGS]...
@@ -773,27 +774,27 @@ Commands:
   votes        Helper for votes.
 {% endhighlight %}
 
-[cli/github_cli.py:](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/github_cli.py)<br>
+[cli/github_cli.py](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/github_cli.py)<br>
 [github_helper.py](https://github.com/lfit/releng-lftools/blob/master/lftools/github_helper.py)<br>
 
 Info File:<br>
-[link to documentation:](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/infofile.html)<br>
-[link to ldap_cli:](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/ldap_cli.py)<br>
-[link to ldap:](https://github.com/lfit/releng-lftools/blob/master/lftools/ldap_cli.py)<br>
-[link to yaml4info:](https://github.com/lfit/releng-lftools/blob/master/shell/yaml4info)<br>
-[link to infofile:](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/infofile.py)<br>
-[link to autocorrectinfofile:](https://github.com/lfit/releng-lftools/blob/master/shell/autocorrectinfofile)<br>
+[link to documentation](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/infofile.html)<br>
+[link to ldap_cli](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/ldap_cli.py)<br>
+[link to ldap](https://github.com/lfit/releng-lftools/blob/master/lftools/ldap_cli.py)<br>
+[link to yaml4info](https://github.com/lfit/releng-lftools/blob/master/shell/yaml4info)<br>
+[link to infofile](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/infofile.py)<br>
+[link to autocorrectinfofile](https://github.com/lfit/releng-lftools/blob/master/shell/autocorrectinfofile)<br>
 
 
 LFID api<br>
-[link to documentation:](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/lfidapi.html)<br>
-[link to lfid_cli :](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/lfidapi.py)<br>
-[link to lfidapi:](https://github.com/lfit/releng-lftools/blob/master/lftools/lfidapi.py)<br>
-[link to :oauth2_helper](https://github.com/lfit/releng-lftools/blob/master/lftools/oauth2_helper.py)<br>
+[link to documentation](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/lfidapi.html)<br>
+[link to lfid_cli](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/lfidapi.py)<br>
+[link to lfidapi](https://github.com/lfit/releng-lftools/blob/master/lftools/lfidapi.py)<br>
+[link to oauth2_helper](https://github.com/lfit/releng-lftools/blob/master/lftools/oauth2_helper.py)<br>
 
 JcasC:<br>
-[link to parser:](https://github.com/lfit/releng-global-jjb/blob/master/jenkins-admin/create_jenkins_global_env_vars.py)<br>
-[Jinja rendering:](https://github.com/lfit/releng-global-jjb/blob/master/jenkins-admin/create_jenkins_clouds_openstack_yaml.py)<br>
+[link to parser](https://github.com/lfit/releng-global-jjb/blob/master/jenkins-admin/create_jenkins_global_env_vars.py)<br>
+[Jinja rendering](https://github.com/lfit/releng-global-jjb/blob/master/jenkins-admin/create_jenkins_clouds_openstack_yaml.py)<br>
 
 <details>
 <summary>
