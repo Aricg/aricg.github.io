@@ -1,6 +1,7 @@
 ---
 layout: page
 title: ~/
+description: Empty Section
 image: assets/images/pic88.png
 nav-menu: true
 ---

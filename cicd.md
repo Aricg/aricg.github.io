@@ -1,6 +1,7 @@
 ---
 layout: page
 title: CI/CD
+description: Empty Section
 image: assets/images/pic55.jpg
 nav-menu: true
 ---

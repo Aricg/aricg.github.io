@@ -2,6 +2,7 @@
 layout: home
 title: Home
 landing-title: 'The central enemy of reliability is complexity.'
+#landing-title: 'The faster Technology advances architectural decisions eventually be proven wrong.'
 description: null
 image: null
 author: null
