@@ -27,7 +27,9 @@ below are code examples that are, luckily, open-source.<br>
 I wrote a CLI interface in python to talk to the gerrit and github apis.<br>
 This culminated in my authoring jenkins driven automatic project creation.<br>
 Project creation which included templating for new projects.<br>
-Allowing CI methods for documentation, builds etc were avaliable from the start<br>
+Allowing CI methods for documentation, builds etc to be avaliable from the start<br>
+And the end there is some of the code for JcasC which allows config files pushed into
+jenkins-job-builder repository to configure jenkins proper. no more clicking.
 [A recent change set that creates a project:](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)
 
 {% highlight none %}
