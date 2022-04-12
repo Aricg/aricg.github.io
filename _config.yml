@@ -26,6 +26,12 @@ socials:
 # build settings
 markdown: kramdown
 
+#syntax_highlighter: coderay
+
+kramdown:
+input: GFM
+syntax_highlighter: rouge
+
 sass:
   style: compressed
 

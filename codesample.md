@@ -5,6 +5,7 @@ image: assets/images/pic01.jpg
 nav-menu: true
 ---
 
+
 <!-- Main -->
 <div id="main" class="alt">
 
@@ -17,20 +18,20 @@ nav-menu: true
 <!-- Content -->
 <p>Here are some code snippits with links to their souce on github</p>
 
-<!-- Text stuff -->
-<h3>Text</h3>
-<code>for (;;) { ... }</code>.
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
-<!-- Preformatted Code -->
-<h3>Preformatted</h3>
-<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
+{% highlight javascript %}
+function sayHello(name) {
+  if (!name) {
+    console.log('Hello World');
+  } else {
+    console.log(`Hello ${name}`);
+  }
 }
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
+{% endhighlight %}
 </div>
