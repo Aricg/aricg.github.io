@@ -6,7 +6,7 @@ actual@aricgardner.com
 
 > Code automation, review, repeat.\
 > I strive to identify and implement best practices.\
-> Infrastructure as code: Continous Integration, Continuous Deployment.\
+> Infrastructure as code, GitOps for CI/CD.\
 > In an ideal world developers interface with compute as a commodity.\
 > All technology decisions will eventually be proven wrong;\
 > The key is understanding how long before we’ll need a rewrite.
