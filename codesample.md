@@ -30,11 +30,7 @@ LFTOOLS/GLOBAL-JJB
   * committer promotion
   * artifact release
   * new project creation
-  * doc builds
-* Admin configuration via code reivew:
-  * Code written for JcasC allows config files in repo to manage jenkins<br>
-
-
+  * doc builds<br>
 
 [A recent change set that creates a project](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)<br>
 [Read the docs shell script](https://github.com/lfit/releng-global-jjb/blob/master/shell/rtdv3.sh)<br>
@@ -42,7 +38,11 @@ LFTOOLS/GLOBAL-JJB
 [Release jobs initial commit](https://github.com/lfit/releng-global-jjb/commit/d473edacae5c8da2b4da50e6d41b2a1c52316813)<br>
 [Example release job](https://gerrit.onap.org/r/c/policy/models/+/128499)<br>
 [Example committer promotion](https://gerrit.onap.org/r/c/cps/ncmp-dmi-plugin/+/128368)<br>
-[Example JcasC change](https://gerrit.onap.org/r/c/ci-management/+/127823)
+
+
+
+
+
 
 {% highlight none %}
 Usage: lftools gerrit [OPTIONS] COMMAND [ARGS]...
@@ -756,16 +756,12 @@ class Gerrit(client.RestApi):
 {% endhighlight %}
 </details>
 
-
 [link to api/gerrit.py](https://github.com/lfit/releng-lftools/blob/master/lftools/api/endpoints/gerrit.py)
 
 The above api interface was written to replace my earlier work done in bash:<br>
 [shell/gerrit_create](https://github.com/lfit/releng-lftools/blob/master/shell/gerrit_create)<br>
 [shell/inactivecommitters](https://github.com/lfit/releng-lftools/blob/master/shell/inactivecommitters)
 
-
-
-[lftools github documentation](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/github.html)
 
 {% highlight none %}
 Usage: lftools github [OPTIONS] COMMAND [ARGS]...
@@ -785,6 +781,8 @@ Commands:
   votes        Helper for votes.
 {% endhighlight %}
 
+[lftools github documentation](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/github.html)<br>
+
 [cli/github_cli.py](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/github_cli.py)<br>
 [github_helper.py](https://github.com/lfit/releng-lftools/blob/master/lftools/github_helper.py)<br>
 
@@ -797,11 +795,19 @@ Info File:<br>
 [link to autocorrectinfofile](https://github.com/lfit/releng-lftools/blob/master/shell/autocorrectinfofile)<br>
 
 
-LFID api<br>
+LFID api (internal identity provider)<br>
 [link to documentation](https://docs.releng.linuxfoundation.org/projects/lftools/en/latest/commands/lfidapi.html)<br>
 [link to lfid_cli](https://github.com/lfit/releng-lftools/blob/master/lftools/cli/lfidapi.py)<br>
 [link to lfidapi](https://github.com/lfit/releng-lftools/blob/master/lftools/lfidapi.py)<br>
 [link to oauth2_helper](https://github.com/lfit/releng-lftools/blob/master/lftools/oauth2_helper.py)<br>
+
+JcasC
+-----
+
+* Jenkins admin configuration via code reivew:
+  * Code written for JcasC allows config files in repo to manage jenkins<br>
+
+[Example JcasC change](https://gerrit.onap.org/r/c/ci-management/+/127823)
 
 JcasC:<br>
 [link to parser](https://github.com/lfit/releng-global-jjb/blob/master/jenkins-admin/create_jenkins_global_env_vars.py)<br>
