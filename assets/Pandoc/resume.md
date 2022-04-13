@@ -4,10 +4,12 @@ actual@aricgardner.com
 
 ----
 
-> Open-source automation. I strive to identify and implement best practices.\
+> Code automation, review, repeat.\
+> I strive to identify and implement best practices.\
 > Infrastructure as code: Continous Integration, Continuous Deployment.\
 > In an ideal world developers interface with compute as a commodity.\
-> All technology decisions will eventually be proven wrong; The key is understanding how long before we’ll need to rewrite.
+> All technology decisions will eventually be proven wrong;\
+> The key is understanding how long before we’ll need a rewrite.
 
 ----
 
