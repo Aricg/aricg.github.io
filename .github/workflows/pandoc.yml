@@ -2,7 +2,7 @@ name: Pandoc
 on:
   push:
     paths:
-      - "Pandoc/**"
+      - "assets/Pandoc/**"
     branches:
       - gh-pages
 
