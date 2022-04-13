@@ -4,9 +4,10 @@ actual@aricgardner.com
 
 ----
 
-> Open-source, Automation, Best Practices.\
-> Continous Integration, Continuous Deployment.\
+> Open-source and automation; I strive to identify and implement best practices.\
+> Infrastructure as codel Continous Integration, Continuous Deployment.\
 > In an ideal world developers interface with compute as a commodity.\
+> All architectural decisions will be wrong eventually. The key is understanding what bets we’re making and how long before we’ll need to rewrite.
 
 ----
 
