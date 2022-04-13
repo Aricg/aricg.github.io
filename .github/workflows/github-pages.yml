@@ -5,7 +5,7 @@ on:
     branches:
       - gh-pages # or master before October 2020
     paths-ignore:
-      - Pandoc
+      - assets/Pandoc
 
 jobs:
   github-pages:
