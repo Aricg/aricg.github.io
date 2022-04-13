@@ -20,18 +20,19 @@ Professional Experience
 : Developed automations to deliver self-service to the developers of large software collaborations (OpenDaylight, ONAP, OPNFV)
 
     * Provided release engineering and system administration for collaborative Projects
-    * Supported Developers around the globe with jobs, docs, artifacts and everything in-between.
-    * Deployed scaffolding for developer driven test with Jenkins job builder.
-    * Migrated from static baremetal to dynamic provisioning of build nodes.
-    * Contributed in-house code. puppet, ansible, jenkins-job-builder, lftools, global-jjb
-    * Wrote api interfaces for gerrit and github
+    * Supported Developers around the globe with jobs, docs and artifacts
+    * Deployed scaffolding for developer driven test with Jenkins job builder
+    * Migrated from static baremetal to dynamic provisioning of build nodes
+    * Contributed in-house code:
+      * puppet, ansible, jenkins-job-builder, lftools, global-jjb
+    * Wrote api interfaces for Gerrit and Github
     * Custom, YAML driven, in repo, automation for:
-      * Committer rights.
-      * Artifact release, promotion
+      * Committer rights
+      * Artifact release/promotion
       * Project creation (Gerrit, Github, Jenkins)
     * Jenkins Configuration automation in repo via JcasC
-    * Documentaion automation from rst to readthedocs in jenkins
-    * Authored Kubernetes helm packages for non trivial applications
+    * Documentaion automation from .rst to readthedocs in jenkins
+    * Authored Kubernetes helm packages for Matrix chat and Jitsi Meet
     * Worked with in house Terraform
 
 2013-2014
