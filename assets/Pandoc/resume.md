@@ -53,13 +53,13 @@ Professional Experience
 :    **Systems Administrator**; Manwin Canada
 
 
-    * Wrote puppet infrastructure for in house software to streamline developer deployment.
-    * Researched and implemented high availability  solutions for both database and application servers
+    * Wrote puppet infrastructure for in house software to streamline developer deployment
+    * Researched and implemented high availability solutions for both db and app servers
     * Profiled, optimized and migrated MySQL and PostgreSQL databases
     * Deployed production matching VM environments for developers
     * Deployed upgraded latest technology stacks for high traffic websites:
       * redis, sphinx, postgresql, nginx, rabbitmq, haproxy
-    * Wrote automation scripts for my and other departments.
+    * Wrote automation scripts for my and other departments
 
 2008-2011
 :    **Systems Administrator**; StatusNet
