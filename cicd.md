@@ -22,6 +22,7 @@ pyupgrade................................................................Passed
 rst ``code`` is two backticks........................(no files to check)Skipped
 rst..................................................(no files to check)Skipped
 changelog filenames..................................(no files to check)Skipped
+{% endhighlight %}
 
 
 Commit early and often
