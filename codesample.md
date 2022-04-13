@@ -20,18 +20,29 @@ nav-menu: true
   <h1>Work Specimines</h1>
 </header>
 
-LFTOOLS
+LFTOOLS/GLOBAL-JJB
 -------
 
-lftools is a CLI script that acts as the glue between components in LF's CI infrastructure.<br>
-below are code examples that are, luckily, open-source.<br>
-I wrote a CLI interface in python to talk to the gerrit and github apis.<br>
-This culminated in my authoring jenkins driven automatic project creation.<br>
-Project creation which included templating for new projects.<br>
-Allowing CI methods for documentation, builds etc to be avaliable from the start<br>
-And the end there is some of the code for JcasC which allows config files pushed into <br>
-jenkins-job-builder repository to configure jenkins proper. no more clicking. <br>
-[A recent change set that creates a project](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)
+* lftools is a CLI script that acts as the glue between components in LF's CI infrastructure
+* global-jjb is a common jenkins job builder base for LF projects
+* Examples of my authored code can be provided as these softwares are open-source
+* My work culminated jenkins driven automation:
+  * committer promotion
+  * artifact release
+  * new project creation
+  * doc builds
+* Admin configuration via code reivew:
+  * Code written for JcasC allows config files in repo to manage jenkins<br>
+
+
+
+[A recent change set that creates a project](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)<br>
+[Read the docs shell script](https://github.com/lfit/releng-global-jjb/blob/master/shell/rtdv3.sh)<br>
+[Read the docs example build](https://gerrit.onap.org/r/c/policy/parent/+/128484)<br>
+[Release jobs initial commit](https://github.com/lfit/releng-global-jjb/commit/d473edacae5c8da2b4da50e6d41b2a1c52316813)<br>
+[Example release job](https://gerrit.onap.org/r/c/policy/models/+/128499)<br>
+[Example committer promotion](https://gerrit.onap.org/r/c/cps/ncmp-dmi-plugin/+/128368)
+[Example JcasC change](https://gerrit.onap.org/r/c/ci-management/+/127823)
 
 {% highlight none %}
 Usage: lftools gerrit [OPTIONS] COMMAND [ARGS]...
