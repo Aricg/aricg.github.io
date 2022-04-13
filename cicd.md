@@ -1,12 +1,14 @@
 ---
 layout: post
 title: CI/CD
-description: Empty Section
+description: Infrastructure as Code
 image: assets/images/pic55.jpg
 nav-menu: true
 ---
 
-Pre-commit: catch common errors and enforce standards before engaging your pipeline.
+Pre-commit
+----------
+catch common errors and enforce standards before engaging your pipeline.
 {% highlight shell %}
 
 $ git commit -m "Add super awesome feature"
@@ -39,7 +41,7 @@ Enforce documentation on new features, docstrings on functions, release notes on
 
 Code-review
 -----------
-You CI is only as good as your review, smaller diffs are easier to review, but changes languish
+Your CI is only as good as your review, smaller diffs are easier to review, big changes languish
 
 Developers have to write their own tests
 -----------------------------------------
@@ -47,5 +49,20 @@ Make it dead simple for them to add and tweak tests, put up the scafolding and d
 
 Only alert on failure
 ----------------------
-No news is good news, don't ping for zero exits.
+No news is good news, don't ping when we exit zero.
+
+Infrastructure as code
+----------------------
+Everything needs to be code, everything needs machine and human review.
+
+Gitops
+------
+Provide your developers a way to trigger specific parts of the pipline with arguments
+in their commit message.<br>
+Put all triggers in the template by default, devs can delete the lines they don't need.
+{% highlight shell %}
+git config --global commit.template
+git config --global commit.cleanup strip
+{% endhighlight %}
+
 
