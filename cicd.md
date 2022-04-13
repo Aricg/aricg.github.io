@@ -10,7 +10,6 @@ Pre-commit
 ----------
 catch common errors and enforce standards before engaging your pipeline.
 {% highlight shell %}
-
 $ git commit -m "Add super awesome feature"
 black....................................................................Passed
 blacken-docs.........................................(no files to check)Skipped
