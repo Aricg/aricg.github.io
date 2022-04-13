@@ -41,7 +41,7 @@ LFTOOLS/GLOBAL-JJB
 [Read the docs example build](https://gerrit.onap.org/r/c/policy/parent/+/128484)<br>
 [Release jobs initial commit](https://github.com/lfit/releng-global-jjb/commit/d473edacae5c8da2b4da50e6d41b2a1c52316813)<br>
 [Example release job](https://gerrit.onap.org/r/c/policy/models/+/128499)<br>
-[Example committer promotion](https://gerrit.onap.org/r/c/cps/ncmp-dmi-plugin/+/128368)
+[Example committer promotion](https://gerrit.onap.org/r/c/cps/ncmp-dmi-plugin/+/128368)<br>
 [Example JcasC change](https://gerrit.onap.org/r/c/ci-management/+/127823)
 
 {% highlight none %}
@@ -809,7 +809,7 @@ JcasC:<br>
 
 <details>
 <summary>
-JcasC Updater
+JcasC Updater (Bash)
 </summary>
 {% highlight python %}
 #!/bin/bash
