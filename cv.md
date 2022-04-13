@@ -7,9 +7,7 @@ nav-menu: true
 ---
 
 * [PDF][2]
-* [MD][1]
 
-[1]:{{ aricg.github.io }}/assets/Pandoc/resume.md
 [2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
 
 Resume rendered from markdown to pdf via [github actions](https://github.com/Aricg/aricg.github.io/blob/gh-pages/.github/workflows/pandoc.yml)
