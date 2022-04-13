@@ -5,7 +5,7 @@ actual@aricgardner.com
 ----
 
 > A self-taught technophile\
-> Open-source, automation, best practices\
+> Open-source, Automation, Best Practices\
 > Continous Integration\
 > In an ideal world developers interface with compute as a commodity\
 
@@ -37,46 +37,45 @@ Professional Experience
 2013-2014
 :    **Systems Administrator**; eNovance
 
-    * Created a ci service for changes to our puppet manifest with Jenkins
-    * Preformed live updates of the Zimbra mail suite for multiple clients
-    * Preformed OS upgrades of production  OpenVZ/KVM hypervisors, leveraging DRBD and lvm migration for minimal downtime
+    * Created a CI service for changes to our puppet manifest with Jenkins
+    * Upgraded production OpenVZ hypervisors, leveraging DRBD and LVM
     * Deployed and configured hypervisors from PXE to Production
-    * H/A migration of multiple services including: Apache, Nginx, Mysql, Mongodb, Redis, Shoutcast
-    * Deployed OpenVZ clusters with drbd for high availability
+    * H/A migration of Apache, Nginx, Mysql, Mongodb, Redis, Shoutcast services
+    * Deployed OpenVZ clusters with DRBD
     * Managed AWS servers and created backup solutions for all clients
     * Created and recovered Mysql and PostgreSQL replica sets
     * Contributed bug fixes for and extended functionality of in house puppet modules.
-    * Scripted daily tasks with Bash and Awk to contribute to the overall automation of eNovances workflow.
-    * Created and improved Nagios checks for various sevices
+    * Scripted daily tasks,contributing to the overall automation of eNovances workflow.
+    * Created and improved Nagios checks for various services
 
 2011-2013
 :    **Systems Administrator**; Manwin Canada
 
 
-    * Wrote and documented puppet infrastructure for in house software to streamline developer deployment.
-    * Researched and implemented systems to provide high availability for both database and application servers
+    * Wrote puppet infrastructure for in house software to streamline developer deployment.
+    * Researched and implemented high availability  solutions for both database and application servers
     * Profiled, optimized and migrated MySQL and PostgreSQL databases
-    * Configured virtualized development environments in KVM and XEN to match those in production for development teams
-    * Deployed software stacks leveraging the latest technologies for high traffic websites (redis, sphinx, postgresql, nginx, rabbitmq, haproxy)
-    * Wrote Bash scripts for my and other departments.
+    * Deployed production matching VM environments for developers
+    * Deployed upgraded latest technology stacks for high traffic websites:
+      * redis, sphinx, postgresql, nginx, rabbitmq, haproxy
+    * Wrote automation scripts for my and other departments.
 
 2008-2011
 :    **Systems Administrator**; StatusNet
 
 
-    * Deployed and managed infrastructure for StatusNet's cloud service with Puppet and Git
+    * Deployed and managed infrastructure for StatusNet's cloud service
     * Performed rolling upgrades of MySQL database clusters, leveraging replication
     * Migrated high traffic websites across hosting environments with minimal downtime
-    * Capacity planning and networking diagrams
+    * Capacity planning
     * Documented deployment and recovery procedures
     * Trained new employees
-    * Cross platform testing of the StatusNet software in virtual machines
+    * Cross platform testing of the StatusNet software whith virtual machines
     * Deployed the StatusNet software for clients behind their corporate firewalls
-    * Responded to support requests on the phone, in IRC, via e-mail and on a forum
-    * Deployed fault tolerant load balanced applications, including ActiveMQ, Meteord and Prosody.
-    * Provisioned and decommissioned servers and services, both dedicated and in the cloud
-    * Wrote scripts to simplify the integration of production web and application servers
+    * Responded to support requests on the phone, IRC, e-mail and forums
+    * Deployed fault tolerant load balanced applications:
+      * ActiveMQ, Meteord, Prosody
     * Set up and maintained developer environments which matched production
     * Set up and maintained the company mail server, mailing lists and CMS
     * Monitored services and kept metrics
-    * Wrote customized nagios checks to monitor services
+    * Implemented nagios for monitoring and wrote custom nagios checks
