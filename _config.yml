@@ -40,3 +40,4 @@ exclude:
   - LICENSE.md
   - CONTRIBUTING.md
   - README.md
+  - assets/Pandoc/resume.md
