@@ -4,9 +4,8 @@ actual@aricgardner.com
 
 ----
 
-> A self-taught technophile.\
-> Open-source, Automation, Best Practices\
-> Continous Integration, Continuous Deployment\
+> Open-source, Automation, Best Practices.\
+> Continous Integration, Continuous Deployment.\
 > In an ideal world developers interface with compute as a commodity.\
 
 ----
