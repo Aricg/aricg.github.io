@@ -8,8 +8,8 @@ actual@aricgardner.com
 > GitOps for Infrastructure as code, CI/CD.\
 > I strive to identify and implement best practices.\
 > All technology decisions will eventually be proven wrong;\
-> The key is understanding how long before we’ll need a rewrite.
-> In an ideal world developers interface with compute as a commodity.\
+> The key is understanding how long before we’ll need a rewrite.\
+> In an ideal world developers interface with compute as a commodity.
 
 ----
 
