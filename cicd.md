@@ -80,5 +80,4 @@ Stakeholders of the latest change and CI can provide proactive post-feedback as 
   * Is this change safe to revert?
   * How does production look after the change? Anything potential concerns?
   * Anomaly monitoring can comment directly to this patchset.
-Merge an already verified proposal if things went south.
-
+All the information, verified, in the right place.
