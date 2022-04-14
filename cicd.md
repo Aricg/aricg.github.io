@@ -63,5 +63,22 @@ Put all triggers in the template by default, devs can delete the lines they don'
 git config --global commit.template
 git config --global commit.cleanup strip
 {% endhighlight %}
+[Rebase with comment](https://github.com/cirrus-actions/rebase)<br>
+[Revert with a comment](https://github.com/marketplace/actions/automatic-revert)
 
+Logging as feedback
+-------------------
+Alerts tend to have a terrible signal to noise ratio.
+Anomalies in logs, failures, Et al. should be treated as feedback.
+For example, let the machine post to the conversational review of the merged patch set.
+Now when you look back at the most recently merged code, you have context in the right place.
+
+4am retrograde
+---------------
+It's free* to have a patchset proposing a revert of the most recent production change.
+Stakeholders of the latest changed and CI can provide proactive feedback as a matter of course:
+  * Is this change safe to revert?
+  * How does production look after the change? Anything potential concerns?
+  * Anomaly monitoring can comment directly to this patchset.
+Merge an already verified proposal if things go south.
 
