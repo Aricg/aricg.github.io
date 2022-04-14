@@ -32,7 +32,7 @@ Good CI feedback encourages developers to merge their local changes with the mai
 
 Communicate
 -----------
-What local tests do your developers run to smoke test their code? We want this in CI
+What local tests do your developers run to smoke test their code? We want this in CI.
 
 Enforce
 -------
@@ -40,11 +40,11 @@ Enforce documentation on new features, docstrings on functions, release notes on
 
 Code-review
 -----------
-Your CI is only as good as your review, smaller diffs are easier to review, big changes languish
+Your CI is only as good as your review, smaller diffs are easier to review, big changes languish.
 
-Developers have to write their own tests
+Developers write their own tests
 -----------------------------------------
-Make it dead simple for them to add and tweak tests, put up the scafolding and document it well.
+Make it dead simple for them to add and tweak tests, put up the scaffolding and document it well.
 
 Only alert on failure
 ----------------------
@@ -54,8 +54,8 @@ Infrastructure as code
 ----------------------
 Everything needs to be code, everything needs machine and human review.
 
-Gitops
-------
+Gitops helpers
+--------------
 Provide your developers a way to trigger specific parts of the pipline with arguments
 in their commit message.<br>
 Put all triggers in the template by default, devs can delete the lines they don't need.
@@ -68,7 +68,7 @@ git config --global commit.cleanup strip
 
 Logging as feedback
 -------------------
-Alerts tend to have a terrible signal to noise ratio.
+Alerts are only as observed as their signal to noise ratio.
 Anomalies in logs, failures, Et al. should be treated as feedback.
 For example, let the machine post to the conversational review of the merged patch set.
 Now when you look back at the most recently merged code, you have context in the right place.
@@ -76,9 +76,9 @@ Now when you look back at the most recently merged code, you have context in the
 4am retrograde
 ---------------
 It's free* to have a patchset proposing a revert of the most recent production change.
-Stakeholders of the latest changed and CI can provide proactive feedback as a matter of course:
+Stakeholders of the latest change and CI can provide proactive post-feedback as a matter of course:
   * Is this change safe to revert?
   * How does production look after the change? Anything potential concerns?
   * Anomaly monitoring can comment directly to this patchset.
-Merge an already verified proposal if things go south.
+Merge an already verified proposal if things went south.
 
