@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Plan
-description: Integrate ideas
+description: Insights on my approach
 image: assets/images/pic33.jpg
 nav-menu: true
 ---
@@ -80,7 +80,8 @@ Second sprint:
 * Spec out tasks for epic
 
 >Organizing documentation is not a simple task, common templates and guidielines can go a long way to helping encourage
-developers to document their code, a flushed out index with stubs can help with this.
+developers to document their code, a flushed out index with stubs can help with this.\
+If you can’t figure out how to organize your material, try this: Write down ideas in random order, then sort them.
 
 Part 6
 ------

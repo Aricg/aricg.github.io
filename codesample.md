@@ -23,10 +23,10 @@ nav-menu: true
 LFTOOLS/GLOBAL-JJB
 -------
 
-* lftools is a CLI script that acts as the glue between components in LF's CI infrastructure
-* global-jjb is a common jenkins job builder base for LF projects
+* LFtools is a CLI script that acts as the glue between components in LF's CI infrastructure
+* Global-jjb is a common jenkins job builder base for LF projects
 * Examples of my authored code can be provided as these softwares are open-source
-* My work culminated jenkins driven automation:
+* Featured work culminated jenkins driven automation:
   * committer promotion
   * artifact release
   * new project creation
