@@ -19,13 +19,17 @@ nav-menu: true
 <header class="major">
   <h1>Work Specimines</h1>
 </header>
+### Examples of my authored open-source code
+
+>Automation relies on steps or interactions being generalizable.\
+For every task you automate you make the system a little less resilient.\
+Keep things simple and solve only the problems you know you have.
 
 LFTOOLS/GLOBAL-JJB
 -------
 
 * LFtools is a CLI script that acts as the glue between components in LF's CI infrastructure
 * Global-jjb is a common jenkins job builder base for LF projects
-* Examples of my authored code can be provided as these softwares are open-source
 * Featured work culminated jenkins driven automation:
   * committer promotion
   * artifact release
