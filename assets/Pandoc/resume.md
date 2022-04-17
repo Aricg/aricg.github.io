@@ -54,7 +54,6 @@ Professional Experience
 2011-2013
 :    **Systems Administrator**; Manwin Canada
 
-
     * Wrote puppet infrastructure for in house software to streamline developer deployment
     * Researched and implemented high availability solutions for both db and app servers
     * Profiled, optimized and migrated MySQL and PostgreSQL databases
@@ -65,7 +64,6 @@ Professional Experience
 
 2008-2011
 :    **Systems Administrator**; StatusNet
-
 
     * Deployed and managed infrastructure for StatusNet's cloud service
     * Performed rolling upgrades of MySQL database clusters, leveraging replication
