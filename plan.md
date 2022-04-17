@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Plan
+title: Proposal
 description: Insights on my approach
 image: assets/images/pic33.jpg
 nav-menu: true
@@ -37,11 +37,11 @@ Creative work and deep thinking:
 * Iterate ideations
 
 >The most time consuming daily task at the Linux Foundation was new project creation.
-Each project needed a gerrit repo, mirrored to github, a jira project, maven repositories
-and a group of committers backed by ldap. My idea was to create a yaml file per project in a central repository.
+Each project needed a gerrit repo mirrored to github, a jira project, maven repositories
+and an ldap group populated with committers. My idea was to create a yaml file per project in a central repository.
 A jenkins job verified it's correctness and on merge all of the various pieces would be created.
-This took writing various APIs into lftools and some build logic. At the end the info file was pushed into the newly created repo
-and used henseforth to manage committers on the repo.
+This took writing various APIs into lftools and some build logic. After the assets were created the info file was pushed into said newly created repo
+and used henceforth for self-management of committers in that repository.
 
 
 Part 3
