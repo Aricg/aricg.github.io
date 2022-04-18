@@ -11,7 +11,7 @@ nav-menu: true
 
 > I'd like to look over your current pipelines and talk together about them. Your hopes, your dreams, et al.
 
-Identify and itemize workflows:
+1) Identify and itemize workflows:
 -------------------------------
 * Ticket to Merged
 * Alert to Revert
@@ -26,7 +26,7 @@ With some Nexus api integration we were soon able to programmatically verify and
 Now Jessica simply had to review and approve 100 or so patches in gerrit during a release cycle.
 
 
-Create work from problem discovery:
+2) Create work from problem discovery:
 -----------------------------------
 * What is our delta from best practices, best in class.
 * Light research, deep thinking: divine the winds of tomorrow and weave them into your dreams.
@@ -40,7 +40,7 @@ This took writing various APIs into lftools and some build logic. After the asse
 and used henceforth for self-management of committers in that repository.
 
 
-Proposal, sharing:
+3) Proposal, sharing:
 ------------------
 
 * Meet together, review proposals.
@@ -49,7 +49,7 @@ Proposal, sharing:
 > Daily tasks aside I really enjoy creating work for myself.
 That said you need breathing room for this work model.
 
-Iterate, double-check:
+4) Iterate, double-check:
 ----------------------
 
 * Itemize pros and cons (they must exist)
@@ -61,11 +61,11 @@ At release time there was endless chasing of teams to submit their work in the d
 Moving docs/ into each repo and including them in the master index with intersphinx linking (not submodules please)
 really helped everyone reach their milestones, and importantly put the onus where it belonged.
 
-Sprint Planning:
+5) Sprint Planning:
 ----------------
 
 * Spec out Epic and its tasks.
-  * Ensure the end-to-end workflow has been adequately described
+* Ensure the end-to-end workflow has been adequately described
 * Consider writing 'end user' documentation as a starting point:
   * This can help eliminate hand waving.
 
@@ -73,13 +73,13 @@ Sprint Planning:
 developers to document their code, a flushed out index with stubs can help with this.\
 If you can’t figure out how to organize your material, try this: Write down ideas in random order, then sort them.
 
-Sprint Review
+6) Sprint Review
 -------------
 
 * Review Epics, tasks and documentation as end goal.
 * Shake out any remaining hand waving.
 
->My manager Andy had great ideas and no time.
+>My manager Andy had great ideas and little time.
 He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk.
 Andy could clearly disseminate his ideas and would succinctly review my epics ensuring their end to end consistency.
 I was able to complete his assigned work without being blocked as his ideas were flushed out before he set them upon me.
