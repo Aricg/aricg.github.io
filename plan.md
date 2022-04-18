@@ -9,12 +9,12 @@ nav-menu: true
 
 ### I aim to tightly connect: Coding, building, testing, releasing, deploying and monitoring.
 
-> I'd like to look over your current pipelines and talk together about them. Your hopes, your dreams, etc.
+> I would like to look over your current pipelines and talk together about them. Your hopes, your dreams, etc.
 
 1) Identify and itemize workflows
 -------------------------------
-* Ticket to Merged
-* Alert to Revert
+* Ticket to merged
+* Alert to revert
 * Collect pain points
 * Pick operators to sit down with after meetings:
   * learn their systems, their workflows, itemize what takes up their time
@@ -48,8 +48,8 @@ and used henceforth for self-management of committers in that repository.
 * Meet together and review proposals
 * Move forward with the ones you like
 
-> Daily tasks aside, I really enjoy creating work for myself
-That said, you need breathing room for this work model.
+> Daily tasks aside, I really enjoy creating work for myself and collaborating with co-workers.
+That said, the entire team needs breathing room for this work model to track.
 
 4) Iterate, double-check
 ----------------------
