@@ -16,7 +16,7 @@ Identify and itemize workflows:
 * Ticket to Merged
 * Alert to Revert
 * Collect pain points
-* Pick operators to sit down with after meetings and pair work for a span.
+* Pick operators to sit down with after meetings:
   * learn their systems, their workflows, itemize what takes up their time.
 
 >My friend and co-worker Jessica had an unreasonable work load during release time, we analyzed her tickets.
@@ -30,7 +30,7 @@ Create work from problem discovery:
 -----------------------------------
 * What is our delta from best practices, best in class.
 * Light research, deep thinking: divine the winds of tomorrow and weave them into your dreams.
-* Initial proposal writing
+* Initial proposal writing.
 
 >The most time consuming daily task at the Linux Foundation was new project creation.
 Each project needed a gerrit repo mirrored to github, a jira project, maven repositories
@@ -43,16 +43,17 @@ and used henceforth for self-management of committers in that repository.
 Proposal, sharing:
 ------------------
 
-* Meet together and review proposals, I move forward with the ones you like.
+* Meet together, review proposals.
+* Move forward with the ones you like.
 
 > Daily tasks aside I really enjoy creating work for myself.
-That said you need breathing room for this work model to pan out.
+That said you need breathing room for this work model.
 
 Iterate, double-check:
 ----------------------
 
-* pros and cons to the proposed approach (they must exist)
-* alternative approaches.
+* Itemize pros and cons (they must exist)
+* Visit alternative approaches.
 * present these and discuss.
 
 >In the beginning there was a separate repository for all documentation.
@@ -66,7 +67,7 @@ Sprint Planning:
 * Spec out Epic and its tasks.
   * Ensure the end-to-end workflow has been adequately described
 * Consider writing 'end user' documentation as a starting point:
-  * this can help eliminate remaining hand waving
+  * This can help eliminate hand waving.
 
 >Organizing documentation is not a simple task, common templates and guidielines can go a long way to helping encourage
 developers to document their code, a flushed out index with stubs can help with this.\
@@ -75,8 +76,8 @@ If you can’t figure out how to organize your material, try this: Write down id
 Sprint Review
 -------------
 
-* Review Epics, tasks and documentation as end goal
-* Shake out any remaining hand waving
+* Review Epics, tasks and documentation as end goal.
+* Shake out any remaining hand waving.
 
 >My manager Andy had great ideas and no time.
 He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk.
