@@ -31,23 +31,18 @@ LFTOOLS/GLOBAL-JJB
 * LFtools is a CLI script that acts as the glue between components in LF's CI infrastructure
 * Global-jjb is a common jenkins job builder base for LF projects
 * Featured work culminated jenkins driven automation:
-  * committer promotion
-  * artifact release
-  * new project creation
-  * doc builds<br>
+  * Artifact promotion for both Maven and Docker containers (release jobs)
+  * New project creation
+  * Documentation builds
+  * Committer promotion
 
-[A recent change set that creates a project](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69945)<br>
-[Read the docs shell script](https://github.com/lfit/releng-global-jjb/blob/master/shell/rtdv3.sh)<br>
-[Read the docs example build](https://gerrit.onap.org/r/c/policy/parent/+/128484)<br>
-[Release jobs initial commit](https://github.com/lfit/releng-global-jjb/commit/d473edacae5c8da2b4da50e6d41b2a1c52316813)<br>
+[Artifact promotion initial commit](https://github.com/lfit/releng-global-jjb/commit/d473edacae5c8da2b4da50e6d41b2a1c52316813)<br>
 [Example release job](https://gerrit.onap.org/r/c/policy/models/+/128499)<br>
+[New project creation](https://gerrit.linuxfoundation.org/infra/c/releng/info-master/+/69925)<br>
+[Read the docs shell script](https://github.com/lfit/releng-global-jjb/blob/master/shell/rtdv3.sh)<br>
+[Read the docs example build](https://gerrit.onap.org/r/c/policy/parent/+/128484) (Onap)<br>
+[Onap RTD main page](https://docs.onap.org/en/latest/)<br>
 [Example committer promotion](https://gerrit.onap.org/r/c/cps/ncmp-dmi-plugin/+/128368)<br>
-
-
-
-
-
-
 {% highlight none %}
 Usage: lftools gerrit [OPTIONS] COMMAND [ARGS]...
 
