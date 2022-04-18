@@ -49,7 +49,7 @@ Part 3
 
 Sprint Planning:
 
-* Meet together and review proposals, create epics for the ones that pass review
+* Meet together and review proposals, create epics for the ones you like.
 
 > Daily tasks aside I really enjoy creating work for myself.
 That said you need breathing room for this work model to pan out.
@@ -88,6 +88,8 @@ Part 6
 
 Sprint as usual.
 
->I traveled to many events at my last job, it was great to see people in person.
-Many ideas that would have not otherwise been were shared and acted on.
+>My manager Andy had great ideas and no time.
+He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk.
+Andy could clearly disseminate his ideas and would succinctly review my epics ensuring their end to end consistency.
+I was able to complete his assigned work without being blocked as his ideas were flushed out before he set them upon me.
 
