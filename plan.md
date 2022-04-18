@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Proposal
+title: Approach
 description: Insights on my approach
 image: assets/images/pic33.jpg
 nav-menu: true
@@ -9,28 +9,30 @@ nav-menu: true
 
 ### I aim to tightly connect: Coding, building, testing, releasing, deploying and monitoring.
 
-> I'd like to look over your current pipelines and talk together about them. Your hopes, your dreams, et al.
+> I'd like to look over your current pipelines and talk together about them. Your hopes, your dreams, etc.
 
-1) Identify and itemize workflows:
+1) Identify and itemize workflows
 -------------------------------
 * Ticket to Merged
 * Alert to Revert
 * Collect pain points
 * Pick operators to sit down with after meetings:
-  * learn their systems, their workflows, itemize what takes up their time.
+  * learn their systems, their workflows, itemize what takes up their time
 
->My friend and co-worker Jessica had an unreasonable work load during release time, we analyzed her tickets.
-With projects under her purveor growing past 100, promoting maven artifacts via a ticketing system had buckled.
-I devised and implemented a release.yaml. Developers flag for promotion their own maven artifacts.
-With some Nexus api integration we were soon able to programmatically verify and provide feedback, via gerrit comments and votes on the release.yaml patchsets.
-Now Jessica simply had to review and approve 100 or so patches in gerrit during a release cycle.
+>My friend and co-worker Jessica had an unreasonable workload during release time.
+We analyzed her tickets and found that with projects under her purview growing past 100,
+the ticketing system the developers had been using to request promotion of their maven artifacts had buckled.
+To address this, I devised and implemented a release.yaml. Developers could now flag for promotion a specified historical build on the artifact server.
+With some Nexus api integration, we were soon able to programmatically verify and provide feedback.
+Now that the verify job could vote and comment on developer submitted release.yaml patchsets both they and Jessica now had timely feedback during the busy release cycle.
+After these changes, Jessica could simply review and approve 100 or so patchsets, reducing the back and forth inherit in a ticketing system.
+This automation was soon expanded to include container releases as well.
 
-
-2) Create work from problem discovery:
+2) Create work from problem discovery
 -----------------------------------
-* What is our delta from best practices, best in class.
-* Light research, deep thinking: divine the winds of tomorrow and weave them into your dreams.
-* Initial proposal writing.
+* What is our delta from best practices, best in class
+* Light research, deep thinking: divine the winds of tomorrow and weave them into your dreams
+* Initial proposal writing
 
 >The most time consuming daily task at the Linux Foundation was new project creation.
 Each project needed a gerrit repo mirrored to github, a jira project, maven repositories
@@ -40,47 +42,47 @@ This took writing various APIs into lftools and some build logic. After the asse
 and used henceforth for self-management of committers in that repository.
 
 
-3) Proposal, sharing:
+3) Proposal, sharing
 ------------------
 
-* Meet together, review proposals.
-* Move forward with the ones you like.
+* Meet together and review proposals
+* Move forward with the ones you like
 
-> Daily tasks aside I really enjoy creating work for myself.
-That said you need breathing room for this work model.
+> Daily tasks aside, I really enjoy creating work for myself
+That said, you need breathing room for this work model.
 
-4) Iterate, double-check:
+4) Iterate, double-check
 ----------------------
 
 * Itemize pros and cons (they must exist)
-* Visit alternative approaches.
-* present these and discuss.
+* Visit alternative approaches
+* Present these and discuss
 
->In the beginning there was a separate repository for all documentation.
-At release time there was endless chasing of teams to submit their work in the docs repository.
+>In the beginning, there was a separate repository for all documentation,
+which meant that at release time we were constantly chasing after teams to submit their work in the docs repository.
 Moving docs/ into each repo and including them in the master index with intersphinx linking (not submodules please)
-really helped everyone reach their milestones, and importantly put the onus where it belonged.
+really helped everyone reach their milestones and put the onus to submit documentation where it belonged.
 
-5) Sprint Planning:
+
+5) Sprint Planning
 ----------------
 
 * Spec out Epic and its tasks.
 * Ensure the end-to-end workflow has been adequately described
 * Consider writing 'end user' documentation as a starting point:
-  * This can help eliminate hand waving.
+  * This can help eliminate hand waving
 
->Organizing documentation is not a simple task, common templates and guidielines can go a long way to helping encourage
-developers to document their code, a flushed out index with stubs can help with this.\
+>Organizing documentation is not a simple task. Common templates and guidelines can go a long way to helping encourage
+developers to document their code, and a flushed out index with stubs can help with this.
 If you can’t figure out how to organize your material, try this: Write down ideas in random order, then sort them.
 
 6) Sprint Review
 -------------
 
-* Review Epics, tasks and documentation as end goal.
-* Shake out any remaining hand waving.
+* Review Epics, tasks and documentation as end goal
+* Shake out any remaining hand waving
 
->My manager Andy had great ideas and little time.
-He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk.
+>My manager Andy had great ideas but very little time.
+He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk and tasked me with bringing his idea to life.
 Andy could clearly disseminate his ideas and would succinctly review my epics ensuring their end to end consistency.
-I was able to complete his assigned work without being blocked as his ideas were flushed out before he set them upon me.
-
+Because his ideas were flushed out from the outset, I was able to complete the task to his specifications without blocking issues arising.
