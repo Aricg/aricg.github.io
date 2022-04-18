@@ -11,12 +11,11 @@ nav-menu: true
 
 > I'd like to look over your current pipelines and talk together about them. Your hopes, your dreams, et al.
 
-Part 1
-------
-
 Identify and itemize workflows:
+-------------------------------
 * Ticket to Merged
 * Alert to Revert
+* Collect pain points
 * Pick operators to sit down with after meetings and pair work for a span.
   * learn their systems, their workflows, itemize what takes up their time.
 
@@ -27,14 +26,11 @@ With some Nexus api integration we were soon able to programmatically verify and
 Now Jessica simply had to review and approve 100 or so patches in gerrit during a release cycle.
 
 
-Part 2
-------
-
-Creative work and deep thinking:
-* Search for best practices, divine the winds of tomorrow and weave them into your dreams.
-* Light research
-* Proposal writing
-* Iterate ideations
+Create work from problem discovery:
+-----------------------------------
+* What is our delta from best practices, best in class.
+* Light research, deep thinking: divine the winds of tomorrow and weave them into your dreams.
+* Initial proposal writing
 
 >The most time consuming daily task at the Linux Foundation was new project creation.
 Each project needed a gerrit repo mirrored to github, a jira project, maven repositories
@@ -44,49 +40,43 @@ This took writing various APIs into lftools and some build logic. After the asse
 and used henceforth for self-management of committers in that repository.
 
 
-Part 3
-------
+Proposal, sharing:
+------------------
 
-Sprint Planning:
-
-* Meet together and review proposals, create epics for the ones you like.
+* Meet together and review proposals, I move forward with the ones you like.
 
 > Daily tasks aside I really enjoy creating work for myself.
 That said you need breathing room for this work model to pan out.
 
-Part 4
-------
-
-Epic iteration:
+Iterate, double-check:
+----------------------
 
 * pros and cons to the proposed approach (they must exist)
-* alternative approaches
-* Write 'end user' documentation as a starting point:
-  * Ensure that the entire workflow has been described
-  * Identify and eliminate any remaining hand waving
+* alternative approaches.
+* present these and discuss.
 
->In the beginning there was a separate repository for all the documentation.
-At release time there was endless chasing of teams to include their work in the docs repository.
+>In the beginning there was a separate repository for all documentation.
+At release time there was endless chasing of teams to submit their work in the docs repository.
 Moving docs/ into each repo and including them in the master index with intersphinx linking (not submodules please)
-really helped everyone reach their milestones, and put the onus where it belonged.
+really helped everyone reach their milestones, and importantly put the onus where it belonged.
 
-Part 5
-------
+Sprint Planning:
+----------------
 
-Second sprint:
-
-* Review the documentation as end goal
-* Shake out any remaining hand waving
-* Spec out tasks for epic
+* Spec out Epic and its tasks.
+  * Ensure the end-to-end workflow has been adequately described
+* Consider writing 'end user' documentation as a starting point:
+  * this can help eliminate remaining hand waving
 
 >Organizing documentation is not a simple task, common templates and guidielines can go a long way to helping encourage
 developers to document their code, a flushed out index with stubs can help with this.\
 If you can’t figure out how to organize your material, try this: Write down ideas in random order, then sort them.
 
-Part 6
-------
+Sprint Review
+-------------
 
-Sprint as usual.
+* Review Epics, tasks and documentation as end goal
+* Shake out any remaining hand waving
 
 >My manager Andy had great ideas and no time.
 He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk.
