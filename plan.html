@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Approach | Aric Gardner</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="/assets/css/syntax_monokai.css" />
+
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="/" class="logo"><strong>Aric Gardner</strong> <span>Release Engineering</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="/">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		    
+		
+		
+		    
+		
+		    
+		        <li><a href="/all_posts.html">All posts</a></li>
+		    
+		
+		    
+		        <li><a href="/codesample.html">Specimen</a></li>
+		    
+		
+		    
+		        <li><a href="/cv.html">CURRICULUM VITAE</a></li>
+		    
+		
+		    
+		        <li><a href="/env.html">~/</a></li>
+		    
+		
+		    
+		
+		    
+		        <li><a href="/plan.html">Approach</a></li>
+		    
+		
+	</ul>
+<!--
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+-->
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Approach</h1>
+		</header>
+		<span class="image main"><img src="/assets/images/pic33.jpg" alt="" /></span>
+		<h3 id="i-craft-tightly-connected-pipelines-for-code-builds-tests-releases-deployments-and-monitoring">I craft tightly connected pipelines for Code, builds, tests, releases, deployments and monitoring.</h3>
+
+<blockquote>
+  <p>I would like to look over your current pipelines and talk together about them. Your hopes, your dreams..</p>
+</blockquote>
+
+<h2 id="1-identify-and-itemize-workflows">1) Identify and itemize workflows</h2>
+<ul>
+  <li>Ticket to merged</li>
+  <li>Alert to revert</li>
+  <li>Collect pain points</li>
+  <li>Pick operators to sit down with after meetings:
+    <ul>
+      <li>learn their systems, their workflows, itemize what takes up their time</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>My friend and co-worker Jessica had an unreasonable workload during release time.
+We analyzed her tickets and found that with projects under her purview growing past 100,
+the ticketing system the developers had been using to request promotion of their maven artifacts had buckled.
+To address this, I devised and implemented a release.yaml. Developers could now flag for promotion a specified historical build on the artifact server.
+With some Nexus api integration, we were soon able to programmatically verify and provide feedback.
+Now that the verify job could vote and comment on developer submitted release.yaml patchsets both they and Jessica now had timely feedback during the busy release cycle.
+After these changes, Jessica could simply review and approve 100 or so patchsets, reducing the back and forth inherit in a ticketing system.
+This automation was soon expanded to include container releases as well.</p>
+</blockquote>
+
+<h2 id="2-create-work-from-problem-discovery">2) Create work from problem discovery</h2>
+<ul>
+  <li>What is our delta from best practices, best in class</li>
+  <li>Light research, deep thinking: divine the winds of tomorrow and weave them into your dreams</li>
+  <li>Initial proposal writing</li>
+</ul>
+
+<blockquote>
+  <p>The most time consuming daily task at the Linux Foundation was new project creation.
+Each project needed a gerrit repo mirrored to github, a jira project, maven repositories
+and an ldap group populated with committers. My idea was to create a yaml file per project in a central repository.
+A jenkins job verified it’s correctness and on merge all of the various pieces would be created.
+This took writing various APIs into lftools and some build logic. After the assets were created the info file was pushed into said newly created repo
+and used henceforth for self-management of committers in that repository.</p>
+</blockquote>
+
+<h2 id="3-proposal-sharing">3) Proposal, sharing</h2>
+
+<ul>
+  <li>Meet together and review proposals</li>
+  <li>Move forward with the ones you like</li>
+</ul>
+
+<blockquote>
+  <p>Daily tasks aside, I really enjoy creating work for myself and collaborating with co-workers.
+That said, the entire team needs breathing room for this work model to track.</p>
+</blockquote>
+
+<h2 id="4-iterate-double-check">4) Iterate, double-check</h2>
+
+<ul>
+  <li>Itemize pros and cons (they must exist)</li>
+  <li>Visit alternative approaches</li>
+  <li>Present these and discuss</li>
+</ul>
+
+<blockquote>
+  <p>In the beginning, there was a separate repository for all documentation,
+which meant that at release time we were constantly chasing after teams to submit their work in the docs repository.
+Moving docs/ into each repo and including them in the master index with intersphinx linking (not submodules please)
+really helped everyone reach their milestones and put the onus to submit documentation where it belonged.</p>
+</blockquote>
+
+<h2 id="5-sprint-planning">5) Sprint Planning</h2>
+
+<ul>
+  <li>Spec out Epic and its tasks.</li>
+  <li>Ensure the end-to-end workflow has been adequately described</li>
+  <li>Consider writing ‘end user’ documentation as a starting point:
+    <ul>
+      <li>This can help eliminate hand waving</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="organizing-documentation-can-be-a-simple-task-if-we-have-strong-guiding-principles-and-a-flushed-out-index-to-guide-developers">Organizing documentation can be a simple task if we have strong guiding principles and a flushed out index to guide developers.</h3>
+
+<blockquote>
+  <p>There isn’t one thing called documentation, there are four.<br />
+Tutorials:<br />
+Learning precipitates from the concrete to the abstract, you don’t want explanations in your tutorials. you want the user ‘to do’.
+Don’t give the user options, you are creating a service for them. Concrete actions that build confidence, a tutorial will turn your learner into a user.<br />
+How to guides:<br />
+problem oriented, ie: take the user through the steps to solve common problems. Analogy: a recipie<br />
+Reference guides:<br />
+Code determined, these only have one job. Technical description of the machinery and how to operate it.
+With guiding principles of structure, consistency, description and accuracy, this is often the only type of documentation a developer can imagine writing.<br />
+Explanation/background/discussion:<br />
+This is understanding oriented. Explains why things are they way they are. Can discuss multiple options: (eg for a deployment)<br />
+Above all do not mix these catagories in your documentation or the overall quality will fall.
+Be mindful: They represent four different purposes or functions, and require different approaches to their creation.</p>
+</blockquote>
+
+<h2 id="6-sprint-review">6) Sprint Review</h2>
+
+<ul>
+  <li>Review Epics, tasks and documentation as end goal</li>
+  <li>Shake out any remaining hand waving</li>
+</ul>
+
+<blockquote>
+  <p>My manager Andy had great ideas but very little time.
+He saw that a git-ops JcasC implementation would eliminate an entire class of tickets from our helpdesk and tasked me with bringing his idea to life.
+Andy could clearly disseminate his ideas and would succinctly review my epics ensuring their end to end consistency.
+Because his ideas were flushed out from the outset, I was able to complete the task to his specifications without blocking issues arising.</p>
+</blockquote>
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+		  <span class="icon alt fa-envelope"></span>
+		  <a href="mailto:actual@aricgardner.com">actual@aricgardner.com</a>
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/aricg" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+						<li>
+							<a href="https://www.linkedin.com/in/aricgardner/" class="icon alt fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+					
+				
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.scrolly.min.js"></script>
+	<script src="/assets/js/jquery.scrollex.min.js"></script>
+	<script src="/assets/js/skel.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
