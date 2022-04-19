@@ -19,9 +19,7 @@ nav-menu: true
 </header>
 <p>I use zsh/tmux and NeoVim with all the fixings</p>
 
-
-Neovim:
-------
+## Neovim:
 
 vim-plug:
 
@@ -42,13 +40,10 @@ Finished. 0 error(s).
 - ctrlp.vim: OK
 - coc.nvim: OK
 - nerdcommenter: OK
-{% endhighlight %}
-
-
-
-nvim conqueror of completion:
-{% highlight shell %}
-Update finished
+  {% endhighlight %}
+  nvim conqueror of completion:
+  {% highlight shell %}
+  Update finished
 
 - ✓ coc-docker Current version 0.5.0 is up to date.
 - ✓ coc-git Current version 2.4.9 is up to date.
@@ -61,13 +56,38 @@ Update finished
 - ✓ coc-spell-checker Current version 1.2.0 is up to date.
 - ✓ coc-tsserver Updated to v1.10.0
 - ✓ coc-yaml Current version 1.7.5 is up to date.
-{% endhighlight %}
+  {% endhighlight %}
 
 ~/.config/nvim/coc-settings.json<br>
 
-{% highlight shell %}
+{% highlight json %}
 {
-  "coc.preferences.formatOnSaveFiletypes": ["py", "yaml", "json"],
+  "coc.preferences.formatOnSaveFiletypes": ["py", "yaml", "json", "sh", "go",],
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  },
+  "diagnostic-languageserver.filetypes": {
+    "vim": "vint",
+    "markdown": [ "markdownlint", "mdl"],
+    "sh": "shellcheck",
+    "yaml": [ "yamllint" ],
+    "cmake": [ "cmake-lint", "cmakelint" ],
+    "py": "flake8",
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "python": ["black", "isort"],
+    "sh": "shfmt",
+    "cmake": "cmake-format",
+  },
+  "markdownlint.config": {
+    "default": true,
+    "line_length": false
+  },
   "python.linting.flake8Enabled": true,
   "python.formatting.provider": "black",
   "snippets.userSnippetsDirectory": "~/.config/nvim/snippets/"
@@ -83,12 +103,12 @@ match ErrorMsg '\s\+$'
 function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
-autocmd BufWritePre * :call TrimWhiteSpace()
+autocmd BufWritePre \* :call TrimWhiteSpace()
 
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim \
-  --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
+silent !curl -fLo ~/.config/nvim/autoload/plug.vim \
+ --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+autocmd VimEnter \* PlugInstall
 endif
 
 call plug#begin('~/.config/nvim/plugged')
@@ -98,7 +118,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'SidOfc/mkdx'
 Plug 'Shougo/ddc.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'tmhedberg/matchit'
@@ -118,10 +138,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-set cc=120                  " set an 80 column border for good coding style
-set autoindent              " indent a new line the same amount as the line just typed
-set mouse=a                 " enable mouse click
-set clipboard=unnamedplus   " using system clipboard
+set cc=120 " set an 80 column border for good coding style
+set autoindent " indent a new line the same amount as the line just typed
+set mouse=a " enable mouse click
+set clipboard=unnamedplus " using system clipboard
 colorscheme nord
 {% endhighlight %}
 
@@ -129,16 +149,16 @@ colorscheme nord
 
 {% highlight shell %}
 ~/.config/nvim/snippets/
-markdown.snippets  python.snippets    sh.snippets
+markdown.snippets python.snippets sh.snippets
 {% endhighlight %}
 
-Zsh/tmux:
-------
+## Zsh/tmux:
 
 ~/.zshrc
 {% highlight shell %}
 
 # If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -152,28 +172,26 @@ bindkey -v
 set -o vi
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+
 ZSH_THEME="agnoster"
 
 plugins=(
-    git
-    docker
-    docker-compose
-    kubectl
-    colored-man-pages
-    git-flow
-    tmux
-    colored-man-pages
+git
+docker
+docker-compose
+kubectl
+colored-man-pages
+git-flow
+tmux
+colored-man-pages
 )
 
-#Plugins list
-#https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
-
+#Plugins list #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 
 ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 {% endhighlight %}
-
 
 ~/.tmux.conf
 {% highlight shell %}
