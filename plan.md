@@ -7,9 +7,9 @@ nav-menu: true
 ---
 
 
-### I aim to tightly connect: Coding, building, testing, releasing, deploying and monitoring.
+### I craft tightly connected pipelines for Code, builds, tests, releases, deployments and monitoring.
 
-> I would like to look over your current pipelines and talk together about them. Your hopes, your dreams, etc.
+> I would like to look over your current pipelines and talk together about them. Your hopes, your dreams..
 
 1) Identify and itemize workflows
 -------------------------------
@@ -72,9 +72,23 @@ really helped everyone reach their milestones and put the onus to submit documen
 * Consider writing 'end user' documentation as a starting point:
   * This can help eliminate hand waving
 
->Organizing documentation is not a simple task. Common templates and guidelines can go a long way to helping encourage
-developers to document their code, and a flushed out index with stubs can help with this.
-If you can’t figure out how to organize your material, try this: Write down ideas in random order, then sort them.
+### Organizing documentation can be a simple task if we have strong guiding principles and a flushed out index to guide developers.
+
+>There isn’t one thing called documentation, there are four:\
+Tutorials:\
+learning precipitates from the concrete to the abstract, you don't want explanations in your tutorials. you want the user 'to do'
+dont give the user options, you are creating a service for them. concrete actions that build confidence a tutorial will turn your learner into a user\
+Tow to guides:\
+problem oriented, ie: take the user through the steps to solve common problems. analogy: a recipie\
+Reference guides:\
+Code determined, these only have one job. technical description of the machinery and how to operate it.
+Structure, Consistency, Description, Accuracy. This is often the only type of documentation a developer can imagine writing\
+Explanation/background/discussion:\
+This is understanding oriented. Explains why things are they way they are. Can discuss multiple options (eg for a deployment)\
+Above all do not mix these catagories in your documentation or the overall quality will fall.
+Be mindfull: They represent four different purposes or functions, and require four different approaches to their creation.
+
+
 
 6) Sprint Review
 -------------
