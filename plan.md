@@ -74,19 +74,19 @@ really helped everyone reach their milestones and put the onus to submit documen
 
 ### Organizing documentation can be a simple task if we have strong guiding principles and a flushed out index to guide developers.
 
->There isn’t one thing called documentation, there are four:\
+>There isn’t one thing called documentation, there are four.\
 Tutorials:\
-learning precipitates from the concrete to the abstract, you don't want explanations in your tutorials. you want the user 'to do'
-dont give the user options, you are creating a service for them. concrete actions that build confidence a tutorial will turn your learner into a user\
-Tow to guides:\
-problem oriented, ie: take the user through the steps to solve common problems. analogy: a recipie\
+Learning precipitates from the concrete to the abstract, you don't want explanations in your tutorials. you want the user 'to do'.
+Don't give the user options, you are creating a service for them. Concrete actions that build confidence, a tutorial will turn your learner into a user.\
+How to guides:\
+problem oriented, ie: take the user through the steps to solve common problems. Analogy: a recipie\
 Reference guides:\
-Code determined, these only have one job. technical description of the machinery and how to operate it.
-Structure, Consistency, Description, Accuracy. This is often the only type of documentation a developer can imagine writing\
+Code determined, these only have one job. Technical description of the machinery and how to operate it.
+With guiding principles of structure, consistency, description and accuracy, this is often the only type of documentation a developer can imagine writing.\
 Explanation/background/discussion:\
-This is understanding oriented. Explains why things are they way they are. Can discuss multiple options (eg for a deployment)\
+This is understanding oriented. Explains why things are they way they are. Can discuss multiple options: (eg for a deployment)\
 Above all do not mix these catagories in your documentation or the overall quality will fall.
-Be mindfull: They represent four different purposes or functions, and require four different approaches to their creation.
+Be mindful: They represent four different purposes or functions, and require different approaches to their creation.
 
 
 
