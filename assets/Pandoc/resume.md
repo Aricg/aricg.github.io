@@ -15,6 +15,19 @@ actual@aricgardner.com
 
 Professional Experience
 ---------
+2022-2023
+:    **Principal DevOps**; OneSpan
+
+
+    * Provided gitlab-ci on kubernetes and shared runners for multiple teams
+    * springboot and typescript developer support
+    * implemented semantic release
+    * implemented in house terraform to create AWS kubernetes deployments
+    * build.gradle support for internal gitlab package repository
+    * renovate bot
+    * aws kubernetes stack, including SQS, database, redis cache.
+
+: Kubernetes / Gitlab infrastructure and developer support.
 
 2014-2021
 :    **DevOps/Continous Integration**; The Linux Foundation
