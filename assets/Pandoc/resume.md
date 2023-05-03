@@ -18,7 +18,7 @@ Professional Experience
 2022-2023
 :    **Principal DevOps**; OneSpan
 
-    * Provided gitlab-ci on kubernetes and shared runners for multiple teams
+    * Provided Gitlab-ci pipeline implemenation and support on Kubernetes and shared runners for multiple teams
     * Technical developer support for Java, Springboot (backend) and typescript, yarn/node (frontend)
     * implemented semantic release, renovate bot.
     * deployed and maintained in house terraform to create AWS kubernetes deployments
