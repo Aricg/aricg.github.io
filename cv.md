@@ -6,8 +6,6 @@ description: Resume rendered from markdown to pdf via github actions
 nav-menu: true
 ---
 
-<embed src="assets/Pandoc/resume.pdf" type="application/pdf" width="600" height="800" />
-
 
 <style>
   .pdf-container {
@@ -28,8 +26,38 @@ nav-menu: true
 
 
 
+<style>
+  .pdf-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
 
-* [PDF][2]
+  .pdf-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+  }
+
+  .pdf-embed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-background"></div>
+  <embed class="pdf-embed" src="assets/Pandoc/resume.pdf" type="application/pdf" />
+</div>
+
+
+
+* [Direct link][2]
 
 [2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
 
