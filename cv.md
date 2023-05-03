@@ -9,25 +9,6 @@ nav-menu: true
 
 <style>
   .pdf-container {
-    width: 100%;
-    height: 100vh; /* 100% of the viewport height */
-    position: relative;
-  }
-
-  .pdf-embed {
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-<div class="pdf-container">
-  <embed class="pdf-embed" src="assets/Pandoc/resume.pdf" type="application/pdf" />
-</div>
-
-
-
-<style>
-  .pdf-container {
     position: relative;
     width: 100%;
     height: 100vh;
