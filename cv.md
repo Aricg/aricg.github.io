@@ -7,10 +7,9 @@ nav-menu: true
 ---
 
 * [PDF][2]
-
-![My PDF file inserted](assets/Pandoc/resume.pdf)
-
 [2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
+
+<embed src="assets/Pandoc/resume.pdf" type="application/pdf" width="600" height="800" />
 
 Resume rendered from markdown to pdf via [github actions](https://github.com/Aricg/aricg.github.io/blob/gh-pages/.github/workflows/pandoc.yml)
 <details>
