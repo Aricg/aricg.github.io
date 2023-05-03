@@ -6,10 +6,32 @@ description: Resume rendered from markdown to pdf via github actions
 nav-menu: true
 ---
 
-* [PDF][2]
-[2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
-
 <embed src="assets/Pandoc/resume.pdf" type="application/pdf" width="600" height="800" />
+
+
+<style>
+  .pdf-container {
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    position: relative;
+  }
+
+  .pdf-embed {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div class="pdf-container">
+  <embed class="pdf-embed" src="assets/Pandoc/resume.pdf" type="application/pdf" />
+</div>
+
+
+
+
+* [PDF][2]
+
+[2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
 
 Resume rendered from markdown to pdf via [github actions](https://github.com/Aricg/aricg.github.io/blob/gh-pages/.github/workflows/pandoc.yml)
 <details>
