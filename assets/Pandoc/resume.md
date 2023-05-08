@@ -18,16 +18,18 @@ Professional Experience
 2022-2023
 :    **Principal DevOps**; OneSpan
 
+: Kubernetes (EKS) / Gitlab (self-hosted) infrastructure and developer support.
+
     * Provided Gitlab-ci pipeline implemenation and support on Kubernetes and shared runners for multiple teams
     * Technical developer support for Java, Springboot (backend) and typescript, yarn/node (frontend)
-    * implemented semantic release, renovate bot.
+    * Implemented semantic release, renovate bot.
     * deployed and maintained in house terraform to create AWS kubernetes deployments
     * general gradle build support, dependancy resoluction for internal gitlab package repository
     * AWS, AKS - full kubernetes stack, including SQS, RDS, Elasticache.
     * Kubernetes autoscaling - horizontal and vertical.
     * Microsoft playwright - Implemented gradle builds and gitlab-ci w headless browser
+    * Implented modern CI/CD and contanerization of legacy in house Ruby application
 
-: Kubernetes / Gitlab infrastructure and developer support.
 
 2014-2021
 :    **DevOps/Continous Integration**; The Linux Foundation
