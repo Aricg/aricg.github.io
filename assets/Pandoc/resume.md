@@ -2,14 +2,16 @@ Aric Gardner
 ============
 actual@aricgardner.com
 
+
+: **From Local to Production: Harnessing AI, Kubernetes, and Containers to Transform DevOps and Elevate Developer Environments**
+
 ----
 
-> Automate, review, repeat.\
-> GitOps for Infrastructure as code, CI/CD.\
-> I strive to identify and implement best practices.\
-> All technology decisions will eventually be proven wrong;\
-> The key is understanding how long before we’ll need a rewrite.\
-> In an ideal world developers interface with compute as a commodity.
+> Embracing the paradigm shift brought about by AI and advanced tools like ChatGPT \
+> I have revolutionized my approach to DevOps and Infrastructure as Code (IaC), tripling my productivity. \
+> This cutting-edge technology, combined with my expertise in GitOps and CI/CD, allows me to identify and implement best practices with an unprecedented efficiency. \
+> I am acutely aware that all technology decisions will eventually require revision, and my strength lies in accurately predicting those moments of change.\
+> In this rapidly evolving landscape, my ultimate goal is to create an environment where developers can interact with computing resources as seamlessly as they would with any other commodity, harnessing the full potential of this technological revolution.
 
 ----
 
@@ -29,6 +31,7 @@ Professional Experience
     * Kubernetes autoscaling - horizontal and vertical.
     * Microsoft playwright - Implemented gradle builds and gitlab-ci w headless browser
     * Implented modern CI/CD and contanerization of legacy in house Ruby application
+    * Android/IOS - Supported and improved in house build environments for mobile applications.
 
 
 2014-2021
