@@ -17,7 +17,7 @@ nav-menu: true
 * Alert to revert
 * Collect pain points
 * Pick operators to sit down with after meetings:
-  * learn their systems, their workflows, itemize what takes up their time
+* learn their systems, their workflows, itemize what takes up their time
 
 >My colleague Jessica was overwhelmed during release time due to the sheer number of projects under her purview. To alleviate this, I implemented a release.yaml that allowed developers to flag a specific historical build for promotion on the artifact server. With Nexus API integration, we could programmatically verify and provide feedback, reducing the back and forth inherent in a ticketing system. This automation was later expanded to include container releases as well.
 
