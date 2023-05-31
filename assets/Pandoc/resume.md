@@ -9,7 +9,7 @@ actual@aricgardner.com
 
 > Embracing the paradigm shift brought about by AI and advanced tools like ChatGPT \
 > I have revolutionized my approach to DevOps and Infrastructure as Code (IaC), tripling my productivity. \
-> This cutting-edge technology, combined with my expertise in GitOps and CI/CD, allows me to identify and implement best practices with an unprecedented efficiency. \
+> This cutting-edge technology, combined with over a decade of GitOps and CI/CD, allows me to identify and implement best practices with an unprecedented efficiency. \
 > I am acutely aware that all technology decisions will eventually require revision, and my strength lies in accurately predicting those moments of change.\
 > In this rapidly evolving landscape, my ultimate goal is to create an environment where developers can interact with computing resources as seamlessly as they would with any other commodity, harnessing the full potential of this technological revolution.
 
