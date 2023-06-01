@@ -3,13 +3,13 @@ Aric Gardner
 actual@aricgardner.com
 
 
-: **From Local to Production: Harnessing AI, Kubernetes, and Containers to Transform DevOps and Elevate Developer Environments**
+: **From Local to Production: How Generative DevOps, Kubernetes, and Containers Elevate Environments**
 
 ----
 
-> Embracing the paradigm shift brought about by AI and advanced tools like ChatGPT \
-> I have revolutionized my approach to DevOps and Infrastructure as Code (IaC), tripling my productivity. \
-> This cutting-edge technology, combined with over a decade of GitOps and CI/CD, allows me to identify and implement best practices with an unprecedented efficiency. \
+> Generative DevOps calls on us to embrace the paradigm shift brought about by advanced tools like ChatGPT and Co-Pilot. \
+> The disruption to traditional DevOps and Infrastructure as Code (IaC) are game changing, offering a trebeling of productivity. \
+> New tools, combined with over a decade of GitOps and CI/CD, allow me to identify and implement best practices with an unprecedented efficiency. \
 > I am acutely aware that all technology decisions will eventually require revision, and my strength lies in accurately predicting those moments of change.\
 > In this rapidly evolving landscape, my ultimate goal is to create an environment where developers can interact with computing resources as seamlessly as they would with any other commodity, harnessing the full potential of this technological revolution.
 
