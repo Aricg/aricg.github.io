@@ -25,6 +25,11 @@ nav-menu: true
 For every task you automate you make the system a little less resilient.\
 Keep things simple and solve only the problems you know you have.
 
+DNS Text Record Monitor
+-------
+[DNS Text Record Monitor](https://github.com/Aricg/dns-text-record-monitor)<br>
+* Complete with Docker build and python unit tests.
+
 LFTOOLS/GLOBAL-JJB
 -------
 

@@ -23,9 +23,9 @@ Professional Experience
 : Kubernetes (EKS) / Gitlab (self-hosted) infrastructure and developer support.
 
     * Provided Gitlab-ci pipeline implemenation and support on Kubernetes and shared runners for multiple teams
-    * Technical developer support for Java, Springboot (backend) and typescript, yarn/node (frontend)
+    * Technical developer support for Java: Gradle/Springboot (backend) and typescript: Yarn/Node (frontend)
     * Implemented semantic release, renovate bot, contanerized developer build environment.
-    * Deployed and maintained in house terraform to create AWS kubernetes deployments
+    * Deployed and contributed to in house terraform to create AWS kubernetes deployments
     * General gradle build support, dependancy resoluction for internal gitlab package repository
     * AWS, AKS - full kubernetes stack, including SQS, RDS, Elasticache.
     * Kubernetes autoscaling - horizontal and vertical.
