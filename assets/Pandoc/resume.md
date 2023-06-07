@@ -3,7 +3,7 @@ Aric Gardner
 actual@aricgardner.com
 
 
-: **How Generative DevOps, Kubernetes, and Containers can Elevate Environments, from Local to Production.**
+**How Generative DevOps, Kubernetes, and Containers can Elevate Environments, from Local to Production.**
 
 ----
 
