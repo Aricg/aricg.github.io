@@ -25,6 +25,13 @@ nav-menu: true
 For every task you automate you make the system a little less resilient.\
 Keep things simple and solve only the problems you know you have.
 
+
+OpenAI (GPT3/4) Commit Helper
+-------
+[DNS Text Record Monitor](https://github.com/Aricg/dns-text-record-monitor)<br>
+This Python script utilizes OpenAI's GPT-3 (or GPT-4) language model to generate git commit messages based on provided user instructions and optionally, the standard output and git status information.
+It's a command line tool that interacts with the user, gathering information to feed into the AI model and then displaying the generated output. The user can then approve this output or request another try. If the initial output isn't satisfactory, the script can resend the request using the GPT-4 model.
+
 DNS Text Record Monitor
 -------
 [DNS Text Record Monitor](https://github.com/Aricg/dns-text-record-monitor)<br>
