@@ -17,6 +17,32 @@ nav-menu: true
 <header class="major">
   <h1>Workstation Configuration</h1>
 </header>
+
+## LLM Helper
+
+{% highlight shell %}
+
+git clone https://github.com/Aricg/openai-gpt-api.git
+
+vim ~/.openai_config
+[DEFAULT]
+api_key = sk-YOUR-API-KEY
+model = gpt-3.5-turbo
+sudo ln -s ~/Github/openai-gpt-api/gpt /usr/bin/gpt
+
+gpt --help
+usage: gpt [-h] [--include-stdout] [--aicommit] [--model MODEL] [--temperature TEMPERATURE]
+
+options:
+  -h, --help            show this help message and exit
+  --include-stdout      include stdout data in the chat completion
+  --aicommit            create a git commit message
+  --model MODEL         model to use for the chat completion
+  --temperature TEMPERATURE
+                        temperature to use for the chat completion
+
+{% endhighlight %}
+
 <p>I use zsh/tmux and NeoVim with all the fixings</p>
 
 ## Neovim:
