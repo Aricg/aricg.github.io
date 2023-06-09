@@ -41,6 +41,71 @@ options:
   --temperature TEMPERATURE
                         temperature to use for the chat completion
 
+                        (may15venv)  ~/Github/aricg.github.io   gh-pages ±  git add env.md
+(may15venv)  ~/Github/aricg.github.io   gh-pages ✚  gpt --aicommit
+Enter your additional instructions:
+
+Here is the message to be sent:
+
+
+#######################################################################
+
+Given the changes in the provided Git diff, generate a commit message following the Conventional Commits specification.        The commit message should start with a type, optionally followed by a scope, and then a concise summary in the imperative mood of the changes made.         If necessary, follow this with a more detailed explanation of what changes were made and why in the body section.         Remember to keep the summary under 50 characters and the body under 100 characters per line if included.
+```On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   env.md
+
+diff --git a/env.md b/env.md
+index 10a5242..5088db0 100644
+--- a/env.md
++++ b/env.md
+@@ -17,6 +17,32 @@ nav-menu: true
+ <header class="major">
+   <h1>Workstation Configuration</h1>
+ </header>
++
++## LLM Helper
++
++{% highlight shell %}
++
++git clone https://github.com/Aricg/openai-gpt-api.git
++
++vim ~/.openai_config
++[DEFAULT]
++api_key = sk-YOUR-API-KEY
++model = gpt-3.5-turbo
++sudo ln -s ~/Github/openai-gpt-api/gpt /usr/bin/gpt
++
++gpt --help
++usage: gpt [-h] [--include-stdout] [--aicommit] [--model MODEL] [--temperature TEMPERATURE]
++
++options:
++  -h, --help            show this help message and exit
++  --include-stdout      include stdout data in the chat completion
++  --aicommit            create a git commit message
++  --model MODEL         model to use for the chat completion
++  --temperature TEMPERATURE
++                        temperature to use for the chat completion
++
++{% endhighlight %}
++
+ <p>I use zsh/tmux and NeoVim with all the fixings</p>
+
+ ## Neovim:
+```
+
+#######################################################################
+
+
+Do you want to send this message? [y/n/edit]: y
+feat: add LLM Helper to env.md
+
+Add instructions for setting up the LLM Helper, a command-line tool for OpenAI's GPT-3 API. This includes installation instructions and usage options.
+
+
 {% endhighlight %}
 
 <p>I use zsh/tmux and NeoVim with all the fixings</p>
