@@ -1,6 +1,7 @@
 Aric Gardner
 ============
 actual@aricgardner.com
+[aricg.github.io](https://aricg.github.io)
 
 
 **How Generative DevOps, Kubernetes, and Containers can Elevate Environments, from Local to Production.**
