@@ -12,20 +12,37 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
-      - name: Convert with Pandoc
+
+      - name: Convert English resume with Pandoc
         uses: docker://pandoc/latex
         with:
           args: >-
             -o assets/Pandoc/resume.pdf
             assets/Pandoc/resume.md
-      - name: Commit PDF
+
+      - name: Convert French resume with Pandoc
+        uses: docker://pandoc/latex
+        with:
+          args: >-
+            -o assets/Pandoc/resume_fr.pdf
+            assets/Pandoc/resume_fr.md
+
+      - name: Commit PDFs
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/Pandoc/resume.pdf
-          git commit -m "Push resume.pdf"
+          git add assets/Pandoc/resume.pdf assets/Pandoc/resume_fr.pdf
+          git commit -m "Push English and French resumes"
           git push
+
       - uses: actions/upload-artifact@master
         with:
-          name: resume.pdf
+          name: English resume
           path: assets/Pandoc/resume.pdf
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: French resume
+          path: assets/Pandoc/resume_fr.pdf
+
+
