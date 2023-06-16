@@ -6,6 +6,7 @@ description: Resume rendered from markdown to pdf via github actions
 nav-menu: true
 ---
 
+<a href="assets/Pandoc/resume_en.pdf">English</a> | <a href="assets/Pandoc/resume_fr.pdf">Français</a>
 
 <style>
   .pdf-container {
@@ -38,9 +39,11 @@ nav-menu: true
 
 
 
-* [Direct link][2]
+* [Direct link English][2]
+* [Direct link French][3]
 
 [2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
+[3]:{{ aricg.github.io }}/assets/Pandoc/resume_fr.pdf
 
 Resume rendered from markdown to pdf via [github actions](https://github.com/Aricg/aricg.github.io/blob/gh-pages/.github/workflows/pandoc.yml)
 <details>
@@ -82,7 +85,7 @@ jobs:
 </details>
 
 <br>
-Docker makes using Pandoc in your builds easy, try it out:
+Markdown to pdf as a build step can be seen more clearly with a one liner:
 {% highlight shell %}
 #Pandoc interactive:
 docker run -it --volume "$(pwd):/data" --entrypoint "/bin/sh" pandoc/latex
