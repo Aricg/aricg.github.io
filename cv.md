@@ -6,7 +6,7 @@ description: Resume rendered from markdown to pdf via github actions
 nav-menu: true
 ---
 
-<a href="assets/Pandoc/resume_en.pdf">English</a> | <a href="assets/Pandoc/resume_fr.pdf">Français</a>
+<a href="assets/Pandoc/resume.pdf">English</a> | <a href="assets/Pandoc/resume_fr.pdf">Français</a>
 
 <style>
   .pdf-container {
@@ -36,14 +36,6 @@ nav-menu: true
   <div class="pdf-background"></div>
   <embed class="pdf-embed" src="assets/Pandoc/resume.pdf" type="application/pdf" />
 </div>
-
-
-
-* [Direct link English][2]
-* [Direct link French][3]
-
-[2]:{{ aricg.github.io }}/assets/Pandoc/resume.pdf
-[3]:{{ aricg.github.io }}/assets/Pandoc/resume_fr.pdf
 
 Resume rendered from markdown to pdf via [github actions](https://github.com/Aricg/aricg.github.io/blob/gh-pages/.github/workflows/pandoc.yml)
 <details>
