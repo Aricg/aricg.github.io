@@ -41,3 +41,4 @@ exclude:
   - CONTRIBUTING.md
   - README.md
   - assets/Pandoc/resume.md
+  - assets/Pandoc/resume_fr.md
