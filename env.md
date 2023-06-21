@@ -24,75 +24,38 @@ nav-menu: true
 
 git clone https://github.com/Aricg/openai-gpt-api.git
 
+{% endhighlight %}
+
+{% highlight shell %}
 vim ~/.openai_config
 [DEFAULT]
 api_key = sk-YOUR-API-KEY
-model = gpt-3.5-turbo
-sudo ln -s ~/Github/openai-gpt-api/gpt /usr/bin/gpt
+model = gpt-3.5-turbo-16k
+temperature = 0.5
+{% endhighlight %}
 
-gpt --help
-usage: gpt [-h] [--include-stdout] [--aicommit] [--model MODEL] [--temperature TEMPERATURE]
+{% highlight shell %}
+sudo ln -s ~/Github/openai-gpt-api/gpt /usr/bin/gpt
+{% endhighlight %}
+
+{% highlight shell %}
+usage: gpt [-h] [--file FILE [FILE ...] | --command-output {git_commit}]
+           [--model MODEL] [--temperature TEMPERATURE] [--list-saved]
 
 options:
   -h, --help            show this help message and exit
-  --include-stdout      include stdout data in the chat completion
-  --aicommit            create a git commit message
+  --file FILE [FILE ...]
+                        Provide one or multiple filenames to use as input
+  --command-output {git_commit}
+                        Choose a command to run and use its output
   --model MODEL         model to use for the chat completion
   --temperature TEMPERATURE
                         temperature to use for the chat completion
+  --list-saved          List all saved input-output files and exit
 
-                        (may15venv)  ~/Github/aricg.github.io   gh-pages ±  git add env.md
-(may15venv)  ~/Github/aricg.github.io   gh-pages ✚  gpt --aicommit
-Enter your additional instructions:
+{% endhighlight %}
 
-Here is the message to be sent:
-
-
-#######################################################################
-
-Given the changes in the provided Git diff, generate a commit message following the Conventional Commits specification.        The commit message should start with a type, optionally followed by a scope, and then a concise summary in the imperative mood of the changes made.         If necessary, follow this with a more detailed explanation of what changes were made and why in the body section.         Remember to keep the summary under 50 characters and the body under 100 characters per line if included.
-```On branch gh-pages
-Your branch is up to date with 'origin/gh-pages'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   env.md
-
-diff --git a/env.md b/env.md
-index 10a5242..5088db0 100644
---- a/env.md
-+++ b/env.md
-@@ -17,6 +17,32 @@ nav-menu: true
- <header class="major">
-   <h1>Workstation Configuration</h1>
- </header>
-+
-+## LLM Helper
-+
-+{% highlight shell %}
-+
-+git clone https://github.com/Aricg/openai-gpt-api.git
-+
-+vim ~/.openai_config
-+[DEFAULT]
-+api_key = sk-YOUR-API-KEY
-+model = gpt-3.5-turbo
-+sudo ln -s ~/Github/openai-gpt-api/gpt /usr/bin/gpt
-+
-+gpt --help
-+usage: gpt [-h] [--include-stdout] [--aicommit] [--model MODEL] [--temperature TEMPERATURE]
-+
-+options:
-+  -h, --help            show this help message and exit
-+  --include-stdout      include stdout data in the chat completion
-+  --aicommit            create a git commit message
-+  --model MODEL         model to use for the chat completion
-+  --temperature TEMPERATURE
-+                        temperature to use for the chat completion
-+
-+{% endhighlight %}
-+
- <p>I use zsh/tmux and NeoVim with all the fixings</p>
+ <p>zsh/tmux with NeoVim + plugins</p>
 
  ## Neovim:
 ```
