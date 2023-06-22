@@ -57,21 +57,6 @@ options:
 
  <p>zsh/tmux with NeoVim + plugins</p>
 
- ## Neovim:
-```
-
-#######################################################################
-
-
-Do you want to send this message? [y/n/edit]: y
-feat: add LLM Helper to env.md
-
-Add instructions for setting up the LLM Helper, a command-line tool for OpenAI's GPT-3 API. This includes installation instructions and usage options.
-
-
-{% endhighlight %}
-
-<p>I use zsh/tmux and NeoVim with all the fixings</p>
 
 ## Neovim:
 
