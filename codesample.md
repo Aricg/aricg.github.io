@@ -26,11 +26,12 @@ For every task you automate you make the system a little less resilient.\
 Keep things simple and solve only the problems you know you have.
 
 
-OpenAI (GPT3/4) Commit Helper
+GPT OpenAI Chat Completion CLI
 -------
-[AI commit helper](https://github.com/Aricg/openai-gpt-api)<br>
-This Python script utilizes OpenAI's GPT-3 (or GPT-4) language model to generate git commit messages based on provided user instructions and optionally, the standard output and git status information.
-It's a command line tool that interacts with the user, gathering information to feed into the AI model and then displaying the generated output. The user can then approve this output or request another try. If the initial output isn't satisfactory, the script can resend the request using the GPT-4 model.
+[GPT4 in my terminal](https://github.com/Aricg/openai-gpt-api)<br>
+
+A Script that provides a command-line interface (CLI) to interact with the OpenAI GPT models (GPT-3 and GPT-4) for chat completion tasks. It allows users to provide input via text files or command output and select a predefined prompt. The script also supports editing the message using a text editor (Vim) and saving input-output pairs for future reference.
+
 
 DNS Text Record Monitor
 -------
