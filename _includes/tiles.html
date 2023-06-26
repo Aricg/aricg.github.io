@@ -3,7 +3,6 @@
 {% elsif 'pages' == site.tiles-source %}
     {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %}
-<! -- 
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
   <article>
@@ -17,17 +16,3 @@
   </article>
   {% endfor %}
 </section>
--->
-
-{% for tile in tiles limit:site.tiles-count %}
-  <article>
-    <span class="image">
-      <img src="{{ tile.image }}" alt="{{ tile.title }}" />
-    </span>
-    <header class="major">
-      <h3 id="dynamicTitle{{ forloop.index }}"><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
-      <p id="dynamicDescription{{ forloop.index }}">{{ tile.description }}</p>
-    </header>
-  </article>
-{% endfor %}
-
