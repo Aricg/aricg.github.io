@@ -20,9 +20,7 @@
             </header>
             <div class="content">
                 <p style="text-transform: uppercase;">{{ site.description }}</p>
-   <!--                <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
-   </ul>   -->
+                <div id="splashText">Welcome to my site!</div>
             </div>
         </div>
     </section>
@@ -38,12 +36,37 @@
     {% include footer.html %}
 
 <script>
+
+// Array of splash texts
+var splashTexts = [
+  "Welcome to my site!",
+  "Enjoy your stay!",
+  "Check out my portfolio!",
+  // Add all your splash texts here
+];
+
+// Function to change the splash text
+function changeSplashText() {
+  // Get a random index for the splash text
+  var textIndex = Math.floor(Math.random() * splashTexts.length);
+
+  // Get the splash text
+  var splashText = splashTexts[textIndex];
+
+  // Change the content of the splash text element
+  document.getElementById('splashText').textContent = splashText;
+}
+
+// Change the splash text every 5 seconds
+setInterval(changeSplashText, 5000);
+
+
   // Array of landing titles
   var landingTitles = [
     "Embracing productivity augmentation. Delivering Generative DevOps.",
     "How Generative DevOps, Kubernetes and Containers can Elevate Environments - from Local to Production.",
     "DevOps in the age of advanced AI and Container Orchestration",
-    "The faster Technology advances architectural decisions eventually be proven wrong."
+    "The faster Technology advances the quicker architectural decisions will inevitably be proven wrong."
     // Add all your landing titles here
   ];
 

@@ -1,0 +1,14 @@
+#splashText {
+  /* Rotate the text by 20 degrees */
+  transform: rotate(20deg);
+
+  /* Add a pulsating animation */
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
