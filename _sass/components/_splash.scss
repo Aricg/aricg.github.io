@@ -16,3 +16,6 @@
   100% { opacity: 1; }
 }
 
+header.major > #splashText::after {
+    display: none;
+}
