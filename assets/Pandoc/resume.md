@@ -26,7 +26,7 @@ Professional Experience
     * Microsoft playwright - Implemented gradle builds and gitlab-ci w headless browser
     * Implented modern CI/CD and contanerization of legacy in house Ruby application
     * Android/IOS - Supported and improved in house build environments for mobile applications.
-
+    * Logz.io, Jfrog
 
 2014-2021
 :    **DevOps/Continous Integration**; The Linux Foundation
