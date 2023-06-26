@@ -16,7 +16,7 @@
     <section id="banner" class="major">
         <div class="inner">
             <header class="major">
-                <h1>{{ page.landing-title }}</h1>
+                <h1 id="landingTitle">{{ page.landing-title }}</h1>
             </header>
             <div class="content">
                 <p style="text-transform: uppercase;">{{ site.description }}</p>
@@ -36,6 +36,32 @@
     </div>
 
     {% include footer.html %}
+
+<script>
+  // Array of landing titles
+  var landingTitles = [
+    "Embracing productivity augmentation. Delivering Generative DevOps.",
+    "How Generative DevOps, Kubernetes and Containers can Elevate Environments - from Local to Production.",
+    "DevOps in the age of advanced AI and Container Orchestration",
+    "The faster Technology advances architectural decisions eventually be proven wrong."
+    // Add all your landing titles here
+  ];
+
+  // Function to change the landing title
+  function changeLandingTitle() {
+    // Get a random index for the landing title
+    var titleIndex = Math.floor(Math.random() * landingTitles.length);
+
+    // Get the landing title
+    var landingTitle = landingTitles[titleIndex];
+
+    // Change the content of the landing title element
+    document.getElementById('landingTitle').textContent = landingTitle;
+  }
+
+  // Change the landing title every 5 seconds
+  setInterval(changeLandingTitle, 5000);
+</script>
 
 </body>
 
