@@ -1,6 +1,6 @@
 #splashText {
   /* Rotate the text by 20 degrees */
-  transform: rotate(20deg);
+  transform: rotate(-24deg);
   /* Add a pulsating animation */
   animation: pulse 1s infinite;
   /* Center the text */
@@ -8,9 +8,10 @@
   /* Remove the underline */
   text-decoration: none;
   color: yellow;
-  position: absolute;
-  top: 0px;
+  position: relative;
+  top: 196px;
   right: 0px;
+  font-size: 20px
 }
 
 @keyframes pulse {

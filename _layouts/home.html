@@ -94,28 +94,36 @@ function changeSplashText() {
 setInterval(changeSplashText, 3000);
 
 
-  // Array of landing titles
-  var landingTitles = [
-    "Embracing productivity augmentation. Delivering Generative DevOps.",
-    "How Generative DevOps, Kubernetes and Containers can Elevate Environments - from Local to Production.",
-    "DevOps in the age of advanced AI and Container Orchestration",
-    // Add all your landing titles here
-  ];
+// Array of landing titles
+var landingTitles = [
+  "Embracing productivity augmentation. Delivering Generative DevOps.",
+  "DevOps in the age of advanced AI and Container Orchestration",
+  // Add all your landing titles here
+];
 
-  // Function to change the landing title
-  function changeLandingTitle() {
-    // Get a random index for the landing title
-    var titleIndex = Math.floor(Math.random() * landingTitles.length);
+// Variable to keep track of the current landing title index
+var currentTitleIndex = 0;
 
-    // Get the landing title
-    var landingTitle = landingTitles[titleIndex];
+// Function to change the landing title
+function changeLandingTitle() {
+  // Get the landing title at the current index
+  var landingTitle = landingTitles[currentTitleIndex];
 
-    // Change the content of the landing title element
-    document.getElementById('landingTitle').textContent = landingTitle;
+  // Change the content of the landing title element
+  document.getElementById('landingTitle').textContent = landingTitle;
+
+  // Increment the current title index
+  currentTitleIndex++;
+
+  // Reset the index to 0 if it exceeds the length of the array
+  if (currentTitleIndex >= landingTitles.length) {
+    currentTitleIndex = 0;
   }
+}
 
-  // Change the landing title every 9 seconds
-  setInterval(changeLandingTitle, 9000);
+// Add a click event listener to the landing title element
+document.getElementById('landingTitle').addEventListener('click', changeLandingTitle);
+
 </script>
 
 </body>
