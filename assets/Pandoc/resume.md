@@ -5,7 +5,8 @@ actual@aricgardner.com
 
 ----
 
-**Expert in utilizing AI tools like ChatGPT and Co-Pilot,** my 17 years of experience supercharges Generative DevOps within your organization. Embracing the paradigm shift, I leverage these disruptive technologies and my extensive GitOps and CI/CD knowledge for unparalleled efficiency. **I excel at forecasting key revisions** in tech decisions. My aim? Empowering developers to interact with computing resources seamlessly, **fully unlocking the tech revolution's potential**.
+**Expert in Automation** - Leveraging 17 years of experience to supercharge AI tools like ChatGPT and Co-Pilot. Embrace the paradigm shift with my extensive knowledge in GitOps and CI/CD. Bring Generative DevOps to your organization for unparalleled productivity. By empowering developers to interact with computing resources as a commodity, **I aim to fully unlock the tech revolution's potential**.
+
 
 ----
 
