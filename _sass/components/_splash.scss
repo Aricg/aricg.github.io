@@ -9,9 +9,16 @@
   text-decoration: none;
   color: yellow;
   position: relative;
-  top: 165px;
-  right: 20px;
+  top: 323px;
+  right: -19px;
   font-size: 20px
+
+/* Media query to hide the splash message on mobile devices */
+@media (max-width: 768px) {
+  #splashText {
+    display: none;
+  }
+
 }
 
 @keyframes pulse {
