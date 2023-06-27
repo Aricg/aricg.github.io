@@ -6,7 +6,7 @@ actual@aricgardner.com
 
 ----
 
-**Expert dans l'utilisation d'outils IA comme ChatGPT et Co-Pilot,** mes 17 ans d'expérience dynamisent le Generative DevOps au sein de votre organisation. Embrassant le changement de paradigme, j'exploite ces technologies disruptives et ma connaissance approfondie de GitOps et CI/CD pour une efficacité inégalée. **Je excelle à prévoir les révisions clés** dans les décisions technologiques. Mon but? Permettre aux développeurs d'interagir avec les ressources informatiques de manière transparente, **débloquant pleinement le potentiel de la révolution technologique**.
+**Expert en Automatisation** - Exploitant 17 ans d'expérience pour suralimenter des outils d'IA comme ChatGPT et Co-Pilot. Embrassez le changement de paradigme avec ma connaissance approfondie en GitOps et CI/CD. Apportez DevOps Génératif à votre organisation pour une productivité sans pareil. En permettant aux développeurs d'interagir avec les ressources informatiques comme une commodité, **je vise à débloquer pleinement le potentiel de la révolution technologique**.
 
 ----
 
