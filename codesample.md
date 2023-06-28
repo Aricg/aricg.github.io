@@ -17,7 +17,7 @@ nav-menu: true
 
 
 <header class="major">
-  <h1>Work Specimines</h1>
+  <h1>Personal Specimines</h1>
 </header>
 ### Examples of my authored open-source code
 
@@ -37,6 +37,11 @@ DNS Text Record Monitor
 -------
 [DNS Text Record Monitor](https://github.com/Aricg/dns-text-record-monitor)<br>
 * Complete with Docker build and python unit tests.
+
+<header class="major">
+  <h1>Work Specimines</h1>
+</header>
+### The Linux Foundation did much of its work in the open, allowing it to be shared here. 
 
 LFTOOLS/GLOBAL-JJB
 -------
