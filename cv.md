@@ -77,14 +77,3 @@ jobs:
 </details>
 
 <br>
-Markdown to pdf as a build step can be seen more clearly with a one liner:
-{% highlight shell %}
-#Pandoc interactive:
-docker run -it --volume "$(pwd):/data" --entrypoint "/bin/sh" pandoc/latex
-
-#Pandoc simple:
-docker run -it --volume "$(pwd):/data" pandoc/latex input.md -o output.pdf
-{% endhighlight %}
-
-
-
