@@ -17,7 +17,7 @@ Professional Experience
 
 : Kubernetes (EKS) / Gitlab (self-hosted) infrastructure and developer support.
 
-    * Provided Gitlab-ci pipeline implemenation and support on Kubernetes and shared runners for multiple teams
+    * Provided Gitlab-ci/Helm pipeline implemenation and support on Kubernetes and shared runners for multiple teams
     * Technical developer support for Java: Gradle/Springboot (backend) and typescript: Yarn/Node (frontend)
     * Implemented semantic release, renovate bot, contanerized developer build environment.
     * Deployed and contributed to in house terraform to create AWS kubernetes deployments
@@ -27,7 +27,7 @@ Professional Experience
     * Microsoft playwright - Implemented gradle builds and gitlab-ci w headless browser
     * Implented modern CI/CD and contanerization of legacy in house Ruby application
     * Android/IOS - Supported and improved in house build environments for mobile applications.
-    * Logz.io, Jfrog
+    * Logz.io, Jfrog, Helm
 
 2014-2021
 :    **DevOps/Continous Integration**; The Linux Foundation
