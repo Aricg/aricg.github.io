@@ -40,5 +40,6 @@ exclude:
   - LICENSE.md
   - CONTRIBUTING.md
   - README.md
+  - plan.md
   - assets/Pandoc/resume.md
   - assets/Pandoc/resume_fr.md
