@@ -6,21 +6,50 @@
 
 /* Main */
 
-	#main {
-		background-color: _palette(bg-alt);
+        #main {
+                background-color: _palette(bg-alt);
 
-		> * {
-			border-top: solid 1px _palette(border);
+                > * {
+                        border-top: solid 1px _palette(border);
 
-			&:first-child {
-				border-top: 0;
-			}
+                        &:first-child {
+                                border-top: 0;
+                        }
 
-			@include inner;
-		}
+                        @include inner;
+                }
 
-		&.alt {
-			background-color: transparent;
-			border-bottom: solid 1px _palette(border);
-		}
-	}
+                &.alt {
+                        background-color: transparent;
+                        border-bottom: solid 1px _palette(border);
+                }
+        }
+
+/* Additional styles for About Me page */
+
+        .about-me {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .text-content {
+          flex: 1;
+          padding-right: 20px;
+        }
+
+        /* When the screen size is 600px or less */
+        @media only screen and (max-width: 600px) {
+          .about-me {
+            flex-direction: column;
+          }
+
+          .text-content {
+            padding-right: 0px;
+          }
+
+          .img-content {
+            order: -1; // This will make the image appear above the text on small screens
+            margin-bottom: 20px; // Add some space below the image
+          }
+        }
+
