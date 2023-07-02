@@ -13,8 +13,9 @@ nav-menu: true
 
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1; padding-right: 20px;">
-    <h3>The Garden, the Ice, and the Great Outdoors</h3>
-    <p>In the heart of activity, you'll find me - be it tending to my garden, skating across an icy rink, or navigating through calm river waters. These are not merely hobbies; they form an integral part of who I am. Gardening is a passion that allows me to connect with the Earth and revel in its beauty. Coaching youth hockey lets me channel my energy, igniting the same passion in the players, and canoe camping fuels my adventurous spirit. Life with four kids is the ultimate active journey, each day bringing a new and exciting challenge.</p>
+    <h3>Garden, Ice, and Outdoors</h3>
+    <p>I'm an active soul, constantly in pursuit of engagement. In the garden, my hands are in the soil, connecting with nature. On the ice, I play recreationally and coach youth hockey, passing on my passion for the sport. On the river, I enjoy canoe camping, satisfying my love for adventure. Balancing these activities with raising four kids gives me pause to smile. </p>
+
 
     <h3>Professional</h3>
     <p>My professional journey, rooted in system administration, has seen me evolve into a proficient DevOps specialist. My expertise lies in constructing and managing robust infrastructures, with best practices and automation serving as guiding principles. My workspace, over the years, has encompassed everything from bare metal servers in data centers to cloud platforms like GKE and AWS.</p>
