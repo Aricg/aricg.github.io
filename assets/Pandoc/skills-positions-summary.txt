@@ -1,0 +1,56 @@
+a) Programming Languages:
+- Python
+- Bash
+
+b) Skills: 
+- Scripting
+- Automation
+- JSON
+- YAML driven automation
+- Package and configuration management: package.json, tsconfig.json, eslintrc, prettierrc, babel.config.js, webpack.config.js, jest.config.js, npmrc
+- Environment and deployment configurations: env, docker-compose.yml, build.gradle, gitlab-ci.yml, github/workflows
+- GitOps
+- CI/CD
+- Gitlab-ci
+- Developer support
+- Deployment
+- Helm package author 
+- Pipeline management
+- Kubernetes
+- GKE
+- AWS, AKS - Full Kubernetes stack
+- Autoscaling
+- Containerization, including containerization of legacy applications
+- Terraform
+- Microsoft Playwright
+- Android/IOS build environments
+- Logz.io
+- Jfrog
+- Release engineering
+- System administration
+- Jenkins job builder
+- Puppet 
+- Ansible
+- API programming (Python)
+- Documentation: readthedocs, rst, markdown
+- Opensource contributions
+- Web servers: Apache, Nginx
+- Databases: MySQL, MongoDB, PostgreSQL, SQL
+- AWS servers management
+- High availability solutions, including redundancy, replication, and database profiling, optimization, and migration
+- VM environments deployment
+- Message queues: RabbitMQ, ActiveMQ
+- Load balancing: Haproxy, Traefik, f5
+- Mail server, mailing lists and CMS management
+- Infrastructure management
+- Database clusters and replication
+- Capacity planning
+- Cross-platform testing
+
+c) Positions/Titles: 
+- Principal DevOps
+- DevOps/Continuous Integration
+- Systems Administrator
+
+d) Outside my professional scope: This primarily includes programming jobs (except Python), hybrid or on-site jobs located outside of Montreal, Canada, junior roles, Security Operations (DevSecOps), and Windows administration.
+
