@@ -44,3 +44,5 @@ exclude:
   - assets/Pandoc/resume.md
   - assets/Pandoc/resume_fr.md
   - assets/Pandoc/resume.yaml
+  - assets/Pandoc/skills-positions-summary.txt
+

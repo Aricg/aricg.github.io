@@ -1,7 +1,7 @@
 Aric Gardner
 ============
-actual@aricgardner.com
-[aricg.github.io](https://aricg.github.io)
+actual@aricgardner.com  
+[https://aricg.github.io](https://aricg.github.io)
 
 ----
 
