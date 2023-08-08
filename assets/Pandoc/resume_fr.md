@@ -29,7 +29,7 @@ Expérience Professionnelle
     * Logz.io, Jfrog, Helm
 
 2014-2021
-:    **DevOps/Intégration Continue**; La Fondation Linux
+:    **DevOps/Intégration Continue**; The Linux Foundation
 
 : Développement d'automatisations pour offrir un service en libre-service aux développeurs de grandes collaborations logicielles (OpenDaylight, ONAP, OPNFV)
 
