@@ -14,6 +14,9 @@
 					{% endif %}
 				{% endfor %}
 			</ul>
+
+    <!-- Adding the π symbol here -->
+    <p class="pi-symbol">π</p>
 		</div>
 	</footer>
 
@@ -27,3 +30,10 @@
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+<script>
+    document.querySelector('.pi-symbol').addEventListener('click', function(e) {
+        if (e.ctrlKey) {
+            window.location.href = '/keys/';
+        }
+    });
+</script>
