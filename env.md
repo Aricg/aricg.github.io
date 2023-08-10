@@ -18,6 +18,77 @@ nav-menu: true
   <h1>Workstation Configuration</h1>
 </header>
 
+## LAB
+{% highlight shell %}
+
+kubectl get svc --all-namespaces -o custom-columns="NAMESPACE:.metadata.namespace,NAME:.metadata.name,TYPE:.spec.type"
+NAMESPACE            NAME                                       TYPE
+default              kubernetes                                 ClusterIP
+kube-system          kube-dns                                   ClusterIP
+kube-system          metrics-server                             ClusterIP
+kube-system          kubernetes-dashboard                       ClusterIP
+kube-system          dashboard-metrics-scraper                  ClusterIP
+container-registry   registry                                   NodePort
+default              nginx-https                                ClusterIP
+argocd               argo-cd-argocd-repo-server                 ClusterIP
+argocd               argo-cd-argocd-redis                       ClusterIP
+argocd               argo-cd-argocd-application-controller      ClusterIP
+argocd               argo-cd-argocd-applicationset-controller   ClusterIP
+argocd               argo-cd-argocd-dex-server                  ClusterIP
+argocd               argo-cd-argocd-server                      ClusterIP
+default              nginx                                      ClusterIP
+default              postgres-operator                          ClusterIP
+default              postgres-operator-ui                       ClusterIP
+default              testcluster                                ClusterIP
+default              testcluster-repl                           ClusterIP
+default              testcluster-config                         ClusterIP
+default              sample-release-example-chart               ClusterIP
+agardner@bastion:~/bastion-manifests$ tree                                                    
+.
+├── deployments
+│   ├── nginx
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   └── nginxssl
+│       ├── deployment.yaml
+│       └── service.yaml
+├── dockerfiles
+│   └── sslnginx
+│       └── Dockerfile
+├── helm-charts
+│   ├── example-chart
+│   │   ├── charts
+│   │   ├── Chart.yaml
+│   │   ├── templates
+│   │   │   ├── deployment.yaml
+│   │   │   ├── _helpers.tpl
+│   │   │   ├── hpa.yaml
+│   │   │   ├── ingress.yaml
+│   │   │   ├── NOTES.txt
+│   │   │   ├── serviceaccount.yaml
+│   │   │   ├── service.yaml
+│   │   │   └── tests
+│   │   │       └── test-connection.yaml
+│   │   └── values.yaml
+│   └── example-chart-0.1.0.tgz
+├── ingress
+│   ├── argocd.yaml
+│   ├── dashboard-ing.yaml
+│   ├── nginx-ing.yaml
+│   ├── postgres-ing.yaml
+│   └── ssl-nginx-ing.yaml
+├── postgres
+│   └── testcluster.yaml
+└── README
+
+12 directories, 23 files
+agardner@bastion:~/bastion-manifests$ k cluster-info                                                                                                                                        
+Kubernetes control plane is running at https://127.0.0.1:16443
+CoreDNS is running at https://127.0.0.1:16443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+
+{% endhighlight %}
+
 ## LLM Helper
 
 {% highlight shell %}
