@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ~/
-description: Workstation
+description: Labratory
 image: assets/images/pic88.png
 nav-menu: true
 ---
@@ -18,7 +18,7 @@ nav-menu: true
   <h1>Workstation Configuration</h1>
 </header>
 
-## LAB
+## KUBERNETES LAB
 {% highlight shell %}
 
 kubectl get svc --all-namespaces -o custom-columns="NAMESPACE:.metadata.namespace,NAME:.metadata.name,TYPE:.spec.type"
