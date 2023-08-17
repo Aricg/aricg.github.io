@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>CI/CD | Aric Gardner</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="/assets/css/syntax_monokai.css" />
+
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0N7JSQ91Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V0N7JSQ91Z');
+</script>
+ 
+</head> 
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="" class="logo"><strong>Aric Gardner</strong> <span>Release Engineering</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="/">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		
+		    
+		
+		    
+		        <li><a href="/aboutme.html">Self</a></li>
+		    
+		
+		    
+		        <li><a href="/codesample.html">Specimen</a></li>
+		    
+		
+		    
+		        <li><a href="/cv.html">CURRICULUM VITAE</a></li>
+		    
+		
+		    
+		        <li><a href="/env.html">~/</a></li>
+		    
+		
+		    
+		
+		    
+		
+	</ul>
+<!--
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+-->
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>CI/CD</h1>
+		</header>
+		<span class="image main"><img src="/assets/images/pic55.jpg" alt="" /></span>
+		Pre-commit
+----------
+catch common errors and enforce standards before engaging your pipeline.
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Add super awesome feature"</span>
+black....................................................................Passed
+blacken-docs.........................................<span class="o">(</span>no files to check<span class="o">)</span>Skipped
+Trim Trailing Whitespace.................................................Passed
+Fix End of Files.........................................................Passed
+Check Yaml...........................................<span class="o">(</span>no files to check<span class="o">)</span>Skipped
+Debug Statements <span class="o">(</span>Python<span class="o">)</span>................................................Passed
+Flake8...................................................................Passed
+Reorder python imports...................................................Passed
+pyupgrade................................................................Passed
+rst <span class="sb">``</span>code<span class="sb">``</span> is two backticks........................<span class="o">(</span>no files to check<span class="o">)</span>Skipped
+rst..................................................<span class="o">(</span>no files to check<span class="o">)</span>Skipped
+changelog filenames..................................<span class="o">(</span>no files to check<span class="o">)</span>Skipped</code></pre></figure>
+
+
+Commit early and often
+----------------------
+Good CI feedback encourages developers to merge their local changes with the main branch.
+
+Communicate
+-----------
+What local tests do your developers run to smoke test their code? We want this in CI.
+
+Enforce
+-------
+Enforce documentation on new features, docstrings on functions, release notes on releases.
+
+Code-review
+-----------
+Your CI is only as good as your review, smaller diffs are easier to review, big changes languish.
+
+Developers write their own tests
+-----------------------------------------
+Make it dead simple for them to add and tweak tests, put up the scaffolding and document it well.
+
+Only alert on failure
+----------------------
+No news is good news, don't ping when we exit zero.
+
+Infrastructure as code
+----------------------
+Everything needs to be code, everything needs machine and human review.
+
+Gitops helpers
+--------------
+Provide your developers a way to trigger specific parts of the pipline with arguments
+in their commit message.<br>
+Put all triggers in the template by default, devs can delete the lines they don't need.
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git config <span class="nt">--global</span> commit.template
+git config <span class="nt">--global</span> commit.cleanup strip</code></pre></figure>
+[Rebase with comment](https://github.com/cirrus-actions/rebase)<br>
+[Revert with a comment](https://github.com/marketplace/actions/automatic-revert)
+
+Logging as feedback
+-------------------
+Alerts are only as observed as their signal to noise ratio.
+Anomalies in logs, failures, Et al. should be treated as feedback.
+For example, let the machine post to the conversational review of the merged patch set.
+Now when you look back at the most recently merged code, you have context in the right place.
+
+4am retrograde
+---------------
+It's free* to have a patchset proposing a revert of the most recent production change.
+Stakeholders of the latest change and CI can provide proactive post-feedback as a matter of course:
+  * Is this change safe to revert?
+  * How does production look after the change? Anything potential concerns?
+  * Anomaly monitoring can comment directly to this patchset.
+All the information, verified, in the right place.
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+		  <span class="icon alt fa-envelope"></span>
+		  <a href="mailto:actual@aricgardner.com">actual@aricgardner.com</a>
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/aricg" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+						<li>
+							<a href="https://www.linkedin.com/in/aricgardner/" class="icon alt fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+					
+				
+			</ul>
+
+    <!-- Adding the π symbol here -->
+    <p class="pi-symbol">π</p>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.scrolly.min.js"></script>
+	<script src="/assets/js/jquery.scrollex.min.js"></script>
+	<script src="/assets/js/skel.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="/assets/js/main.js"></script>
+<script>
+    document.querySelector('.pi-symbol').addEventListener('click', function(e) {
+        if (e.ctrlKey) {
+            window.location.href = '/keys/';
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

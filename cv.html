@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>CURRICULUM VITAE | Aric Gardner</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="/assets/css/syntax_monokai.css" />
+
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0N7JSQ91Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V0N7JSQ91Z');
+</script>
+ 
+</head> 
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="" class="logo"><strong>Aric Gardner</strong> <span>Release Engineering</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="/">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		
+		    
+		
+		    
+		        <li><a href="/aboutme.html">Self</a></li>
+		    
+		
+		    
+		        <li><a href="/codesample.html">Specimen</a></li>
+		    
+		
+		    
+		        <li><a href="/cv.html">CURRICULUM VITAE</a></li>
+		    
+		
+		    
+		        <li><a href="/env.html">~/</a></li>
+		    
+		
+		    
+		
+		    
+		
+	</ul>
+<!--
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+-->
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>CURRICULUM VITAE</h1>
+		</header>
+		<span class="image main"><img src="/assets/images/pic00.jpg" alt="" /></span>
+		<table>
+  <tbody>
+    <tr>
+      <td><a href="assets/Pandoc/resume.pdf">English</a></td>
+      <td><a href="assets/Pandoc/resume_fr.pdf">Français</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  .pdf-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .pdf-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+  }
+
+  .pdf-embed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-background"></div>
+  <embed class="pdf-embed" src="assets/Pandoc/resume.pdf" type="application/pdf" />
+</div>
+
+<p>Resume rendered from markdown to pdf via <a href="https://github.com/Aricg/aricg.github.io/blob/gh-pages/.github/workflows/pandoc.yml">github actions</a></p>
+<details>
+<summary> pandoc.yml </summary>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">name</span><span class="pi">:</span> <span class="s">Pandoc</span>
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">paths</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">Pandoc/**"</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">gh-pages</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">convert_via_pandoc</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-18.04</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Set up Git repository</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v3</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Convert with Pandoc</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">docker://pandoc/latex</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">args</span><span class="pi">:</span> <span class="pi">&gt;-</span>
+            <span class="s">-o Pandoc/resume.pdf</span>
+            <span class="s">Pandoc/resume.md</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Commit PDF</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">git config user.name github-actions</span>
+          <span class="s">git config user.email github-actions@github.com</span>
+          <span class="s">git add Pandoc/resume.pdf</span>
+          <span class="s">git commit -m "Push resume.pdf"</span>
+          <span class="s">git push</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/upload-artifact@master</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">name</span><span class="pi">:</span> <span class="s">resume.pdf</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">Pandoc/resume.pdf</span></code></pre></figure>
+
+</details>
+
+<p><br /></p>
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+		  <span class="icon alt fa-envelope"></span>
+		  <a href="mailto:actual@aricgardner.com">actual@aricgardner.com</a>
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/aricg" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+						<li>
+							<a href="https://www.linkedin.com/in/aricgardner/" class="icon alt fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+					
+				
+			</ul>
+
+    <!-- Adding the π symbol here -->
+    <p class="pi-symbol">π</p>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.scrolly.min.js"></script>
+	<script src="/assets/js/jquery.scrollex.min.js"></script>
+	<script src="/assets/js/skel.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="/assets/js/main.js"></script>
+<script>
+    document.querySelector('.pi-symbol').addEventListener('click', function(e) {
+        if (e.ctrlKey) {
+            window.location.href = '/keys/';
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
